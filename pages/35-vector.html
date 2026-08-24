@@ -1,30 +1,25 @@
 <!doctype html><html><head><meta charset="utf-8"><title>Vector</title>
-<style>*{margin:0;box-sizing:border-box}body{background:#0e0e12;color:#f0eee8;font-family:sans-serif;min-height:100vh;overflow-x:hidden}
-.hero{text-align:center;padding:14vh 6vw 9vh;position:relative}
-.kick{font-size:11px;letter-spacing:.45em;color:#ff5c38;text-transform:uppercase;margin-bottom:2.4em}
-h1{font-weight:800;font-size:clamp(2.9rem,6.6vw,5.8rem);line-height:1;letter-spacing:-.04em}
-h1 span{color:#ff5c38}
-p{max-width:420px;margin:3vh auto 0;font-weight:300;font-size:15px;line-height:1.95;color:#a8a49c}
-.go{margin-top:3.4vh;display:inline-block;background:#ff5c38;color:#fff;font-weight:600;padding:17px 46px;border-radius:8px;text-decoration:none;font-size:13px;transition:.25s}
-.go:hover{transform:translateY(-3px);box-shadow:0 16px 44px #ff5c3855}
-.arrows{display:flex;justify-content:center;gap:34px;margin-top:9vh;font-size:22px;color:#3a3a44}
-.arrows i{animation:hop 1.6s ease-in-out infinite;font-style:normal}
-.arrows i:nth-child(2){animation-delay:.2s}.arrows i:nth-child(3){animation-delay:.4s}
-@keyframes hop{50%{transform:translateY(-10px);color:#ff5c38}}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#26262e;max-width:1000px;margin:0 auto 12vh;border-radius:12px;overflow:hidden}
-@media(max-width:760px){.steps{grid-template-columns:1fr}}
-.step{background:#14141a;padding:40px 32px;text-align:left}
-.step b{color:#ff5c38;font-family:monospace;font-size:13px;display:block;margin-bottom:16px}
-.step h3{font-weight:600;font-size:18px;margin-bottom:10px}
-.step p{margin:0;font-size:13px;color:#8f8b82;line-height:1.85}
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#0f0f13;color:#eeeef2;font-family:Inter,sans-serif;height:100vh;overflow:hidden;display:flex}
+.arrows-viz{flex:1.1;position:relative;background:#0a0a0e;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.v-arrow{position:absolute;font-family:Syne;font-weight:800;color:#22222c;animation:flyV 4s linear infinite;font-size:60px}
+.va1{top:18%;left:-10%;animation-duration:3.6s}.va2{top:48%;left:-16%;animation-duration:5s;animation-delay:1.2s}.va3{top:74%;left:-8%;animation-duration:4.4s;animation-delay:2.1s}
+.v-arrow.hot{color:#7c5cff;filter:drop-shadow(0 0 14px #7c5cff66)}
+@keyframes flyV{to{transform:translateX(120vw) rotate(8deg)}}
+@media(max-width:780px){.arrows-viz{display:none}}
+.copy{width:min(54%,620px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#0f0f13;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#9d7bff;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:Syne;font-weight:800;font-size:clamp(2.9rem,5.4vw,5.2rem);line-height:1;text-transform:uppercase;letter-spacing:-.02em}
+h1 span{color:#9d7bff}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#98939f;max-width:420px}
+.go-row{margin-top:2.8em;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.go{background:#9d7bff;color:#0f0f13;padding:17px 46px;text-decoration:none;font-size:13px;font-weight:800;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #9d7bff44}
+.note-v{font-size:12px;color:#75707c}
 </style></head><body>
-<div class="hero">
-<div class="kick">Ideas → system, weekly</div>
-<h1>Stop collecting.<br>Start <span>shipping.</span></h1>
-<p>Vector turns the ideas in your notes app into a weekly shipping cadence — one deliberate step per idea, every week, tracked.</p>
-<a class="go" href="#">START YOUR FIRST LOOP — FREE</a>
-<div class="arrows"><i>→</i><i>→</i><i>→</i></div></div>
-<div class="steps">
-<div class="step"><b>MONDAY</b><h3>Pick one</h3><p>Your idea backlog surfaces its highest-energy candidate. One, not twelve.</p></div>
-<div class="step"><b>MIDDAY</b><h3>Move it forward</h3><p>A single 90-minute block advances that idea exactly one visible step.</p></div>
-<div class="step"><b>FRIDAY</b><h3>Ship or kill</h3><p>Every idea ends the week either further along or honestly retired. No zombies.</p></div></div></body></html>
+<div class="arrows-viz"><div class="v-arrow va1">→</div><div class="v-arrow hot va2">→</div><div class="v-arrow va3">→</div></div>
+<div class="copy">
+<div class="kick">Vector · momentum as a service</div>
+<h1>All signal.<br>No <span>drift.</span></h1>
+<p>Vector watches your projects the way air-traffic control watches runways — flagging what's stalled, celebrating what's moving, and never letting a priority quietly disappear.</p>
+<div class="go-row"><a class="go" href="#">Get on the vector →</a><span class="note-v">free for your first 3 projects</span></div></div></body></html>
