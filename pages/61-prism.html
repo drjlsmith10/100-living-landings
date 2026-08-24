@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Prism</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0b0d14;color:#e8eaf2;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.beam-stage{flex:1.1;position:relative;background:#080a10;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.beam-in{position:absolute;top:50%;left:0;width:min(30vw,260px);height:4px;background:linear-gradient(90deg,transparent,#fff);transform:translateY(-50%);animation:beamflow 2.6s linear infinite}
+@keyframes beamflow{from{opacity:.2}50%{opacity:1}to{opacity:.2}}
+.tri{position:absolute;top:50%;left:min(28vw,300px);transform:translateY(-50%) rotate(-8deg);width:0;height:0;border-top:90px solid transparent;border-bottom:90px solid transparent;border-right:150px solid #ffffff14;border-left:60px solid transparent;filter:drop-shadow(0 0 20px #ffffff11)}
+.spectrum{position:absolute;left:calc(min(28vw,320px) + 40px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;width:min(34vw,340px)}
+.band{height:9px;border-radius:5px;transform-origin:left;animation:fanoutP 3s ease-out infinite alternate}
+.bd1{background:#ff5c7a}.bd2{background:#ffb35c;animation-delay:.15s}.bd3{background:#ffe45c;animation-delay:.3s}.bd4{background:#5ce87a;animation-delay:.45s}.bd5{background:#5cb8ff;animation-delay:.6s}.bd6{background:#b48cff;animation-delay:.75s}
+@keyframes fanoutP{from{transform:scaleX(.25);opacity:.4}}
+.lbl{position:absolute;right:24px;font-size:10px;letter-spacing:.18em;color:#6b7690;text-transform:uppercase;text-align:right}
+.copy{width:min(48%,560px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#0b0d14;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#8f9dff;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.07;color:#f0f2fa}
+h1 b{color:#8f9dff;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#8f96ad;max-width:400px}
+.go{margin-top:2.8em;width:fit-content;background:linear-gradient(90deg,#ff5c7a,#8f9dff,#5cb8ff);color:#0b0d14;font-weight:700;padding:16px 44px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s}
+.go:hover{transform:scale(1.04);box-shadow:0 0 44px #8f9dff44}
+</style></head><body>
+<div class="beam-stage">
+<div class="beam-in"></div><div class="tri"></div>
+<div class="spectrum"><div class="band bd1"></div><div class="band bd2"></div><div class="band bd3"></div><div class="band bd4"></div><div class="band bd5"></div><div class="band bd6"></div></div></div>
+<div class="copy">
+<div class="kick">See your customer journey in full color</div>
+<h1>Every journey is<br>one story told <b>six ways.</b></h1>
+<p>Prism splits your analytics by who's actually behind the clicks — the researcher, the buyer, the skeptic — so each gets the message that moves them.</p>
+<a class="go" href="#">Split your first journey →</a></div></body></html>

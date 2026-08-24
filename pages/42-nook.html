@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Nook</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;1,400&family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#efe9df;color:#3f382e;font-family:'DM Sans',sans-serif;height:100vh;overflow:hidden;display:flex}
+.room{flex:1.1;position:relative;background:linear-gradient(165deg,#e2d8c6,#cfc0a8);display:flex;align-items:flex-end;justify-content:center;gap:24px;padding-bottom:14vh;perspective:700px}
+.sofa{width:min(30vw,240px);height:110px;background:#8a9a7b;border-radius:20px 20px 10px 10px;position:relative;box-shadow:0 30px 50px #00000033;transform:rotateY(-12deg)}
+.sofa::before{content:"";position:absolute;top:-52px;left:8px;right:8px;height:60px;background:#96a687;border-radius:18px 18px 0 0}
+.lamp{width:16px;height:150px;background:#4a4238;border-radius:8px;position:relative}
+.lamp::before{content:"";position:absolute;top:-46px;left:-30px;width:76px;height:56px;background:#d97b4a;clip-path:polygon(22% 100%,42% 0,58% 0,78% 100%);border-radius:6px}
+.lamp::after{content:"";position:absolute;top:-30px;left:-40px;width:96px;height:90px;background:radial-gradient(#ffb37c44,transparent 70%);animation:lampGlow 5s ease-in-out infinite alternate}
+@keyframes lampGlow{to{opacity:.55}}
+.rug{position:absolute;bottom:-6vh;left:50%;transform:translateX(-50%) rotateX(62deg);width:70%;height:34%;border-radius:50%;border:10px solid #b06a45;background:#c98a5e}
+.copy{width:min(46%,520px);padding:11vh 6vw;display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#b06a45;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(2.7rem,4.6vw,4.5rem);line-height:1.1;font-style:italic}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#75695a;max-width:400px}
+.pieces{margin-top:2.6em;font-family:Fraunces;font-style:normal;font-size:15px;line-height:2.3;color:#57503f}
+.go{margin-top:2.6em;width:fit-content;background:#3f382e;color:#efe9df;padding:16px 40px;text-decoration:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase;border-radius:999px;transition:.25s}
+.go:hover{background:#b06a45}
+</style></head><body>
+<div class="room"><div class="rug"></div><div class="sofa"></div><div class="lamp"></div></div>
+<div class="copy">
+<div class="kick">Furniture for smaller lives</div>
+<h1>Your home is not<br>a showroom.</h1>
+<p>Every Nook piece is sized for apartments under 800 square feet — full-depth comfort, half the footprint, no assembly altar required.</p>
+<div class="pieces">The Loveseat · 58″ wide<br>The Corner Desk · folds to 12″<br>The Stair Shelf · fits under stairs</div>
+<a class="go" href="#">Shop small spaces</a></div></body></html>

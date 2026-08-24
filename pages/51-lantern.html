@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Lantern</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0e1420;color:#e8edf4;font-family:sans-serif;height:100vh;overflow:hidden;display:flex;align-items:center;padding:0 7vw}
+.wrap{display:flex;width:100%;gap:min(6vw,80px);align-items:center}
+@media(max-width:840px){.wrap{flex-direction:column-reverse}.lamp-viz{width:min(60vw,240px)!important}}
+.copy{flex:1;max-width:520px}
+.kick{font-size:11px;letter-spacing:.42em;color:#ffd166;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.06}
+h1 b{color:#ffd166;font-weight:700}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#98a5b8;max-width:400px}
+.go{margin-top:2.8em;display:inline-block;background:#ffd166;color:#0e1420;font-weight:700;padding:16px 42px;border-radius:8px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #ffd16644}
+.lamp-viz{width:min(36vw,260px);position:relative;text-align:center}
+.lamp-body{width:170px;height:210px;margin:0 auto;background:#131a28;border:3px solid #2c3850;border-radius:20px;position:relative;overflow:hidden;box-shadow:0 30px 70px #00000066}
+.glowwin{position:absolute;top:24px;left:24px;width:52px;height:64px;background:#ffd166;border-radius:6px;box-shadow:0 0 34px 10px #ffd16655;animation:flickL 4s ease-in-out infinite}
+.glowwin.b{left:auto;right:24px;animation-delay:2s;height:44px;top:34px}
+.doorway{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:56px;height:70px;background:#0a0f18;border-radius:10px 10px 0 0}
+@keyframes flickL{45%,55%{opacity:.55}50%,60%{opacity:.9}}
+.beam{position:absolute;top:-30px;left:50%;width:340px;height:200px;margin-left:-170px;background:conic-gradient(from 180deg at 50% 100%,transparent,#ffd16618 12%,transparent 26%);animation:breatheBm 5s ease-in-out infinite alternate}
+@keyframes breatheBm{to{opacity:.6;transform:scale(1.08)}}
+</style></head><body>
+<div class="wrap">
+<div class="copy">
+<div class="kick">A brighter client portal</div>
+<h1>Your clients shouldn't<br>have to <b>ask twice.</b></h1>
+<p>Lantern gives every client one glowing page — status, files, next steps, invoices — so "quick question" emails become self-service.</p>
+<a class="go" href="#">LIGHT UP A DEMO →</a></div>
+<div class="lamp-viz"><div class="beam"></div><div class="lamp-body"><div class="glowwin"></div><div class="glowwin b"></div><div class="doorway"></div></div>
+<p style="font-size:11px;color:#6b7890;margin-top:18px;letter-spacing:.25em">STATUS · FILES · NEXT STEPS</p></div></div></body></html>

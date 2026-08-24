@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Stonefruit</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,400&family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#fdf3ec;color:#4a2c22;font-family:Nunito,sans-serif;height:100vh;overflow:hidden;display:flex}
+.jars{flex:1.1;position:relative;background:linear-gradient(160deg,#fbe0d0,#f5c9ae);display:flex;align-items:center;justify-content:center;gap:min(3vw,34px)}
+.jar{width:min(16vw,130px);height:min(30vh,220px);background:linear-gradient(100deg,#ffffffcc,#ffffff55 30%,#ffffffaa);border-radius:14px 14px 20px 20px;position:relative;overflow:hidden;border:1px solid #ffffff88;box-shadow:0 24px 50px #c98a5e33;animation:settleJ .8s cubic-bezier(.2,.9,.3,1.2) both}
+.jar::before{content:"";position:absolute;top:0;left:-6%;width:112%;height:26px;background:linear-gradient(#b5673c,#8a4a28);border-radius:8px;z-index:2}
+.jam{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(#d97b52,#b5542e);animation:setjam 4s ease-in-out infinite alternate}
+.j1{height:64%;border-radius:10px 10px 18px 18px}.j2{height:58%;border-radius:10px 10px 18px 18px;background:linear-gradient(#e8b04b,#d9932e);animation-delay:.6s}.j3{height:70%;border-radius:10px 10px 18px 18px;background:linear-gradient(#a83a52,#8a2a40);animation-delay:1.1s}
+@keyframes setjam{to{transform:translateY(-7px)}}
+@media(max-width:760px){.jars{gap:12px}}
+.copy{width:min(48%,560px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#b5673c;text-transform:uppercase;margin-bottom:2em}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2.8rem,4.8vw,4.7rem);line-height:1.05;color:#3f231a}
+h1 em{font-weight:400;color:#b5673c}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#75503f;max-width:400px}
+.flavors{display:flex;gap:12px;margin-top:2.4em;flex-wrap:wrap}
+.f{border:1.5px solid #d9a488;padding:9px 20px;border-radius:999px;font-size:12.5px;font-weight:700;color:#8a4a28}
+.go{margin-top:2.6em;width:fit-content;background:#b5673c;color:#fdf3ec;font-weight:700;padding:16px 42px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s;display:inline-block;margin-right:14px}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 36px #b5673c44}
+</style></head><body>
+<div class="jars"><div class="jar j1"><div class="jam j1"></div></div><div class="jar"><div class="jam j2"></div></div><div class="jar"><div class="jam j3"></div></div></div>
+<div class="copy">
+<div class="kick">Preserves for the good table</div>
+<h1>Peaches picked <em>Tuesday,</em><br>in jars by Friday.</h1>
+<p>Small-batch preserves made within days of harvest — when the fruit is actually ripe, not whenever the factory schedule says.</p>
+<div class="flavors"><span class="f">blenheim apricot</span><span class="f">sungold tomato</span><span class="f">marionberry</span></div><br>
+<a class="go" href="#">Shop the pantry</a><a class="go" style="background:none;color:#b5673c" href="#">build a gift box →</a></div></body></html>

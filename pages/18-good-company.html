@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Good Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#1e3a2f;color:#eef5ee;font-family:Lato,sans-serif;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+nav{display:flex;justify-content:space-between;padding:24px 6vw;font-size:12px;letter-spacing:.28em;text-transform:uppercase;border-bottom:1px solid #ffffff18}
+.stage{flex:1;position:relative;padding:9vh 6vw;overflow:hidden}
+h1{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(2.8rem,6vw,5.4rem);line-height:1.06;max-width:720px}
+h1 em{color:#a3d977}
+p{margin-top:3vh;max-width:430px;font-weight:300;font-size:15px;line-height:2;color:#b8ccb8}
+.chairs{position:absolute;bottom:-4vh;right:2vw;display:flex;gap:14px;opacity:.9}
+.chair{width:min(13vw,110px);height:min(20vh,150px);background:linear-gradient(#2a4d3e,#224234);border-radius:16px 16px 6px 6px;box-shadow:inset -10px -14px 24px #00000044,0 14px 30px #00000055;transition:.35s cubic-bezier(.2,.9,.3,1.2);animation:settleC .7s cubic-bezier(.2,.9,.3,1.2) both}
+.chair:nth-child(2){animation-delay:.15s}.chair:nth-child(3){animation-delay:.3s}.chair:nth-child(4){animation-delay:.45s}.chair:nth-child(5){animation-delay:.6s;background:#365c49}
+@keyframes settleC{from{transform:translateY(-80px) rotate(-6deg);opacity:0}}
+.chair:hover{transform:translateY(-16px) rotate(-3deg)}
+.cta-row{margin-top:4vh;display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.join{background:#a3d977;color:#1e3a2f;font-weight:400;padding:17px 42px;border-radius:999px;text-decoration:none;font-size:13px;letter-spacing:.08em;transition:.25s}
+.join:hover{transform:scale(1.04);box-shadow:0 0 40px #a3d97744}
+.peek{color:#b8ccb8;text-decoration:none;font-size:13px;border-bottom:1px solid #ffffff44;padding-bottom:3px}
+</style></head><body>
+<nav><span>GOOD COMPANY</span><span>A PRIVATE ROOM FOR INDEPENDENT OPERATORS</span></nav>
+<div class="stage">
+<h1>Solo doesn't have<br>to mean <em>alone.</em></h1>
+<p>Good Company is a members' room for people who run their own ship — fifty operators, one shared brain trust, and a standing Thursday table.</p>
+<div class="cta-row"><a class="join" href="#">Apply for a seat</a><a class="peek" href="#">peek inside first →</a></div>
+<div class="chairs"><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div><div class="chair"></div></div></div></body></html>

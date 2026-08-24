@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Arc</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#08090f;color:#e8ecf5;font-family:sans-serif;height:100vh;overflow:hidden;display:flex;align-items:center;padding:0 7vw}
+.wrap{display:flex;width:100%;gap:min(6vw,70px);align-items:center}
+@media(max-width:860px){.wrap{flex-direction:column-reverse}.chart{width:min(80vw,340px)!important}}
+.copy{max-width:500px;flex:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#7c9cff;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.05}
+h1 b{color:#7c9cff;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#98a3bd;max-width:400px}
+.go{margin-top:2.8em;display:inline-block;background:#7c9cff;color:#08090f;font-weight:700;padding:16px 42px;border-radius:8px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{box-shadow:0 0 44px #7c9cff55;transform:translateY(-3px)}
+.chart{position:relative;width:min(40vw,380px)}
+.arc-bg,.arc-fg{fill:none;stroke-linecap:round}
+.arc-bg{stroke:#1c2233;stroke-width:20}
+.arc-fg{stroke:url(#grad);stroke-width:20;stroke-dasharray:600;stroke-dashoffset:600;animation:drawA 2.2s cubic-bezier(.3,.8,.3,1) forwards .3s}
+@keyframes drawA{to{stroke-dashoffset:120}}
+.proj{text-align:center;margin-top:-30px}
+.proj b{font-size:46px;font-weight:200;background:linear-gradient(90deg,#7c9cff,#b48cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.proj span{font-size:10.5px;letter-spacing:.3em;color:#6b7690;text-transform:uppercase;display:block;margin-top:4px}
+</style></head><body>
+<div class="wrap">
+<div class="copy">
+<div class="kick">Forecast what comes next</div>
+<h1>See next quarter<br>before your <b>competitors</b><br>see this one.</h1>
+<p>Arc blends your pipeline, seasonality, and market signals into a live forecast you can defend in the boardroom — with every assumption visible.</p>
+<a class="go" href="#">FORECAST MY QUARTER →</a></div>
+<div class="chart">
+<svg viewBox="0 0 220 220"><defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c9cff"/><stop offset="100%" stop-color="#b48cff"/></linearGradient></defs>
+<circle class="arc-bg" cx="110" cy="110" r="95" stroke-dasharray="600 600" transform="rotate(-90 110 110)"/>
+<circle class="arc-fg" cx="110" cy="110" r="95" transform="rotate(-90 110 110)"/></svg>
+<div class="proj"><b>+38%</b><span>PROJECTED Q4 GROWTH</span></div></div></div></body></html>

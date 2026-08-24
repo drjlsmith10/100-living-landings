@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Common Thread</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f6f3ec;color:#33302a;font-family:Inter,sans-serif;min-height:100vh;overflow-x:hidden}
+.thread{position:absolute;top:0;left:0;width:200%;height:100%;background:repeating-linear-gradient(115deg,transparent 0 90px,#d9a44122 90px 92px);animation:threadmove 30s linear infinite;pointer-events:none}
+@keyframes threadmove{to{transform:translateX(-180px)}}
+.wrap{position:relative;z-index:1;text-align:center;padding:13vh 7vw 8vh}
+.kick{font-size:11px;letter-spacing:.45em;color:#b5852f;text-transform:uppercase;margin-bottom:2.6em}
+h1{font-family:Fraunces,serif;font-weight:300;font-size:clamp(2.8rem,5.4vw,4.9rem);line-height:1.08}
+h1 b{color:#b5852f;font-weight:600}
+p{max-width:440px;margin:3.5vh auto 0;font-weight:300;font-size:14.5px;line-height:2;color:#75705e}
+.knots{display:flex;justify-content:center;gap:min(3vw,40px);padding:6vh 5vw 10vh;flex-wrap:wrap}
+.knot{width:150px;text-align:center;transition:.35s}
+.knot:hover{transform:translateY(-10px)}
+.avatar{width:84px;height:84px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:32px;border:2px solid #d9cbb0;background:#fff}
+.knot b{display:block;font-size:14px;margin-bottom:4px}
+.knot span{font-size:11.5px;color:#8f887a;line-height:1.7;display:block}
+.join{display:block;width:fit-content;margin:-2vh auto 12vh;background:#33302a;color:#f6f3ec;padding:17px 46px;text-decoration:none;font-size:12px;letter-spacing:.25em;text-transform:uppercase;border-radius:999px;transition:.25s}
+.join:hover{background:#b5852f}
+</style></head><body>
+<div class="thread"></div>
+<div class="wrap">
+<div class="kick">A community for generous builders · by invitation</div>
+<h1>Everyone here has<br>made something <b>worth<br>talking about.</b></h1>
+<p>Common Thread is a small circle of founders, makers, and operators who share what's actually working — monthly dinners, honest teardowns, no pitching.</p></div>
+<div class="knots">
+<div class="knot"><div class="avatar">🧵</div><b>The Dinners</b><span>Twelve seats, one long table, zero name tags</span></div>
+<div class="knot"><div class="avatar">📖</div><b>The Teardowns</b><span>Bring a real problem, leave with three real answers</span></div>
+<div class="knot"><div class="avatar">✉️</div><b>The Letter</b><span>Member wins and fails, written plainly, monthly</span></div></div>
+<a class="join" href="#">Request an invitation</a></body></html>

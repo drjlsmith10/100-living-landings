@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Alto</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#14161d;color:#e6e8ef;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.phones-viz{flex:1.1;position:relative;background:radial-gradient(circle at 55% 45%,#1e2230,#101218);display:flex;align-items:center;justify-content:center}
+.headphones{width:min(44vw,240px);height:min(40vw,220px);position:relative;animation:breatheA 5s ease-in-out infinite alternate}
+.band-a{position:absolute;top:0;left:50%;transform:translateX(-50%);width:78%;height:52%;border:14px solid #3a3f4e;border-bottom:none;border-radius:150px 150px 0 0}
+.cup-l,.cup-r{position:absolute;bottom:0;width:64px;height:84px;background:linear-gradient(145deg,#4a4f60,#2c303c);border-radius:16px}
+.cup-l{left:2%}.cup-r{right:2%}
+.cup-l::after,.cup-r::after{content:"";position:absolute;inset:10px;border-radius:10px;background:#ffd166;opacity:.9;box-shadow:0 0 24px #ffd16688;animation:cupsPulse 5s ease-in-out infinite alternate}
+@keyframes breatheA{to{transform:scale(1.05)}}
+@keyframes cupsPulse{from{opacity:.45}to{opacity:.95}}
+@media(max-width:780px){.phones-viz{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#14161d;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#ffd166;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.8rem,5vw,4.9rem);line-height:1.05;color:#f2f3f7}
+h1 em{color:#ffd166}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#98a0b0;max-width:420px}
+.tracks{margin-top:2.6em;font-size:13px;color:#b8bfcc;line-height:2.5;font-family:'Courier New',monospace}
+.go{margin-top:2.6em;width:fit-content;background:#ffd166;color:#14161d;font-weight:700;padding:16px 44px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s;display:inline-block;margin-right:12px}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #ffd16644}
+</style></head><body>
+<div class="phones-viz"><div class="headphones"><div class="band-a"></div><div class="cup-l"></div><div class="cup-r"></div></div></div>
+<div class="copy">
+<div class="kick">Alto · sound made for concentration</div>
+<h1>Music that knows<br>when to <em>disappear.</em></h1>
+<p>Generative ambient tracks engineered for deep work — no lyrics, no drops, no hooks to hijack. Just a room-filling hum that makes hours feel like minutes.</p>
+<div class="tracks">▸ now playing — "low tide, high focus" (looping)<br>▸ session length — set by your calendar</div>
+<a class="go" href="#">Listen free · one hour</a><a class="go" style="background:none;color:#98a0b0" href="$">how it works →</a></div></body></html>

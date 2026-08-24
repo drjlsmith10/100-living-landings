@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Juniper</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Karla:wght@300&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#eef2ea;color:#2f3a30;font-family:Karla,sans-serif;height:100vh;overflow:hidden;display:flex}
+.botanical{flex:1.1;position:relative;background:#e4ebdd;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.sprig{width:min(50vw,300px);animation:swayJ 7s ease-in-out infinite alternate;transform-origin:bottom center}
+@keyframes swayJ{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.copy{width:min(52%,560px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#5a7a52;text-transform:uppercase;margin-bottom:2em}
+h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.8rem,4.9vw,4.8rem);line-height:1.08;color:#242d22}
+h1 em{color:#5a7a52}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#6b7562;max-width:400px}
+.oils{display:flex;gap:14px;margin-top:2.4em}
+.vial{width:44px;height:70px;border-radius:8px 8px 12px 12px;position:relative;background:linear-gradient(#ffffff88,#00000008);border:1px solid #ffffffaa;box-shadow:0 10px 24px #2f3a3026}
+.vial::before{content:"";position:absolute;top:-9px;left:11px;width:20px;height:12px;border-radius:3px;background:#3a4536}
+.v-oil{position:absolute;bottom:0;width:100%;height:62%;border-radius:0 0 10px 10px}
+.go{margin-top:2.8em;width:fit-content;background:#2f3a30;color:#eef2ea;padding:16px 44px;text-decoration:none;font-size:13px;border-radius:999px;font-weight:600;transition:.25s}
+.go:hover{background:#5a7a52;transform:translateY(-3px)}
+</style></head><body>
+<div class="botanical">
+<svg class="sprig" viewBox="0 0 200 260"><path d="M100,255 C100,180 95,120 100,40" stroke="#5a7a52" stroke-width="5" fill="none"/><ellipse cx="72" cy="80" rx="34" ry="12" fill="#7a9a6e" transform="rotate(-28 72 80)"/><ellipse cx="130" cy="110" rx="34" ry="12" fill="#6b8a60" transform="rotate(-24 130 110)"/><ellipse cx="68" cy="145" rx="32" ry="11" fill="#6b8a60" transform="rotate(-26 68 145)"/><ellipse cx="132" cy="175" rx="30" ry="11" fill="#7a9a6e" transform="rotate(-22 132 175)"/><circle cx="100" cy="36" r="9" fill="#5a7a99"/><circle cx="112" cy="52" r="7" fill="#5a7a99"/></svg></div>
+<div class="copy">
+<div class="kick">Juniper · botanical goods for daily rituals</div>
+<h1>The forest, <em>distilled</em><br>into a morning.</h1>
+<p>Three steam-extracted oils — juniper, pine, and cedar — blended for the ten minutes of your day that set the other thousand.</p>
+<div class="oils"><div class="vial"><div class="v-oil" style="background:#7a9a6e"></div></div><div class="vial"><div class="v-oil" style="background:#4a6b52"></div></div><div class="vial"><div class="v-oil" style="background:#8a6a45"></div></div></div>
+<p style="margin-top:1.6em;font-size:12.5px;color:#8a9480">Steam-distilled · no synthetics · recyclable glass</p>
+<a class="go" href="#">Begin the ritual — $38</a></div></body></html>

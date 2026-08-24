@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Clearwater</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&family=Inter:wght@300&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f4f8fa;color:#16283a;font-family:'Inter',sans-serif;height:100vh;overflow:hidden;display:flex}
+.ripples{flex:1;position:relative;background:#e6eef3;overflow:hidden}
+.rp{position:absolute;border-radius:50%;border:1.5px solid #4a90b888;width:min(70vw,420px);height:min(70vw,420px);top:50%;left:50%;margin-top:calc(min(35vw,210px)*-1);margin-left:calc(min(35vw,210px)*-1);animation:rippleC 5s ease-out infinite}
+.r2{animation-delay:1.7s}.r3{animation-delay:3.4s}
+@keyframes rippleC{from{transform:scale(.15);opacity:.9}to{transform:scale(1.5);opacity:0}}
+.drop-c{position:absolute;top:50%;left:50%;width:22px;height:22px;margin:-11px;background:#4a90b8;border-radius:0 50% 50% 50%;transform:rotate(45deg);animation:dripD 5s ease-in infinite}
+@keyframes dripD{0%,12%{top:-10%;opacity:1}24%{top:50%}30%,100%{opacity:0}}
+.copy{width:min(52%,560px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#2a7ba8;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:'Space Grotesk';font-weight:300;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.08;color:#10283c}
+h1 b{color:#2a7ba8;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#57708a;max-width:400px}
+.dec{background:#fff;border-left:4px solid #2a7ba8;padding:18px 22px;margin-top:2.4em;font-size:13.5px;line-height:1.9;color:#40566b;max-width:400px;box-shadow:0 12px 34px #16283a0d}
+.go{margin-top:2.6em;width:fit-content;background:#10283c;color:#f4f8fa;font-weight:700;padding:16px 42px;text-decoration:none;font-size:13px;border-radius:8px;transition:.25s}
+.go:hover{background:#2a7ba8;transform:translateY(-2px)}
+</style></head><body>
+<div class="ripples"><div class="rp"></div><div class="rp r2"></div><div class="rp r3"></div><div class="drop-c"></div></div>
+<div class="copy">
+<div class="kick">Decision support for leaders in motion</div>
+<h1>One clear mind,<br><b>under pressure.</b></h1>
+<p>Clearwater is a thinking partner for the decisions that don't fit in a spreadsheet — structured questioning, written options, and a recommendation you can defend.</p>
+<div class="dec"><b style="font-family:'Space Grotesk'">This week's engagement:</b> a founder choosing between two acquisition offers. Three sessions, one decision memo, zero regret spirals.</div>
+<a class="go" href="#">Bring your hard call →</a></div></body></html>

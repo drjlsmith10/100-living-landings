@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Harbor</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0d1b26;color:#dfe9ee;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.sea{flex:1.2;position:relative;background:linear-gradient(#13293a,#0a1620);overflow:hidden}
+.wave{position:absolute;width:200%;height:100%;border-radius:45%;left:-50%;background:#ffffff08;animation:rollW 11s linear infinite}
+.w2{animation-duration:17s;background:#ffffff05;top:-8%}.w3{animation-duration:24s;background:#ffffff0c;top:6%}
+@keyframes rollW{to{transform:rotate(360deg)}}
+.buoy{position:absolute;bottom:22%;left:22%;width:34px;height:44px;background:#e05537;border-radius:10px 10px 16px 16px;box-shadow:inset -8px -6px 0 #b03a20;animation:bobB 4s ease-in-out infinite}
+.buoy::before{content:"";position:absolute;top:-18px;left:13px;width:8px;height:18px;background:#e05537}
+.buoy::after{content:"";position:absolute;top:-24px;left:-2px;width:28px;height:12px;border-radius:50%;background:#f7ede0;animation:pulseL 3s ease-in-out infinite}
+@keyframes bobB{50%{transform:translateY(-9px) rotate(3deg)}}
+@keyframes pulseL{50%{opacity:.25}}
+.copy{width:min(52%,560px);padding:12vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#5cb8d4;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.07}
+h1 b{color:#5cb8d4;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#9ab4bf;max-width:420px}
+.list{margin-top:2.4em;line-height:2.4;font-size:14px;color:#c2d5dd}
+.list b{color:#5cb8d4;margin-right:14px;font-weight:400}
+.go{margin-top:2.8em;width:fit-content;background:#5cb8d4;color:#0d1b26;font-weight:700;padding:16px 42px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 40px #5cb8d444}
+</style></head><body>
+<div class="sea"><div class="wave"></div><div class="wave w2"></div><div class="wave w3"></div><div class="buoy"></div></div>
+<div class="copy">
+<div class="kick">Practical resilience for modern teams</div>
+<h1>Calm seas are a<br><b>practice,</b><br>not luck.</h1>
+<p>Harbor builds your team's incident playbooks, on-call rhythms, and recovery drills — so the next bad day is a story, not a postmortem.</p>
+<div class="list"><span><b>01</b>Playbooks written with the people who'll use them</span><br><span><b>02</b>Game days that feel like fire drills, not exams</span><br><span><b>03</b>Recovery targets your customers never notice</span></div>
+<a class="go" href="#">Dock with us →</a></div></body></html>

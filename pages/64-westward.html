@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Westward</title>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Karla:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#1c130c;color:#f0e4cc;font-family:Karla,sans-serif;height:100vh;overflow:hidden;position:relative}
+.desert-sky{position:absolute;inset:0;background:linear-gradient(#3a1f14,#7c3a22 55%,#c96a35 78%,#e8a04a)}
+.sun-set{position:absolute;left:50%;bottom:24%;width:min(30vw,180px);aspect-ratio:1;margin-left:calc(min(15vw,90px)*-1);border-radius:50%;background:#ffd27a;box-shadow:0 0 80px 30px #ffb34766}
+.mesa{position:absolute;background:#2b1508}
+.m1{bottom:-4vh;left:-6vw;width:44vw;height:30vh;border-radius:14px 14px 0 0}
+.m2{bottom:-2vh;right:-8vw;width:38vw;height:20vh;border-radius:12px 12px 0 0}
+.ground{position:absolute;bottom:0;width:100%;height:16vh;background:#170b05}
+.road{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(50vw,420px);height:16vh;background:#33200f;clip-path:polygon(42% 0,58% 0,100% 100%,0 100%)}
+.copy{position:absolute;top:10vh;left:7vw;max-width:520px;z-index:2}
+.kick{font-size:11px;letter-spacing:.45em;color:#ffd27a;text-transform:uppercase;margin-bottom:.6em;font-family:'Rye'}
+h1{font-family:'Rye';font-weight:400;font-size:clamp(2.9rem,6vw,5.4rem);line-height:1;color:#ffe8bd;text-shadow:0 6px 30px #00000088;margin-bottom:.25em}
+p.lede{font-weight:300;font-size:15px;line-height:2;color:#e8cba0;max-width:400px;text-shadow:0 2px 12px #00000066}
+.go{margin-top:3vh;display:inline-block;background:#ffd27a;color:#3a1f14;font-weight:700;padding:17px 46px;text-decoration:none;font-size:13px;letter-spacing:.18em;text-transform:uppercase;border-radius:3px;transition:.25s}
+.go:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:0 16px 40px #00000066}
+.dust{position:absolute;bottom:14vh;width:8px;height:8px;border-radius:50%;background:#e8a04a55;animation:dustd 8s linear infinite}
+.d1{left:20%}.d2{left:60%;animation-delay:3s}.d3{left:82%;animation-delay:5s}
+@keyframes dustd{from{transform:translateY(0)}to{transform:translateY(-40vh) translateX(30px);opacity:0}}
+</style></head><body>
+<div class="desert-sky"></div><div class="sun-set"></div><div class="mesa m1"></div><div class="mesa m2"></div><div class="ground"></div><div class="road"></div>
+<div class="dust d1"></div><div class="dust d2"></div><div class="dust d3"></div>
+<div class="copy">
+<div class="kick">A field journal for modern travel</div>
+<h1>Westward</h1>
+<p class="lede">Dispatches from the two-lane roads — motels with character, diners with history, and the towns the interstate forgot. New entry every Thursday.</p>
+<a class="go" href="#">Read the latest dispatch</a></div></body></html>

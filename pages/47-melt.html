@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Melt</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Karla:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#241610;color:#f0e4d4;font-family:Karla,sans-serif;height:100vh;overflow:hidden;display:flex}
+.bar-wrap{flex:1.15;position:relative;background:linear-gradient(160deg,#332014,#1c110b);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bar{width:min(52vw,300px);aspect-ratio:.62;background:linear-gradient(150deg,#5c3a22,#3a2312 60%,#2b1a0d);border-radius:14px;position:relative;display:flex;flex-wrap:wrap;padding:16px;gap:8px;box-shadow:inset -14px -18px 30px #00000088,0 40px 80px #000000aa,0 0 70px #c9862e18}
+.sq{width:calc(50% - 4px);aspect-ratio:1;border-radius:8px;background:linear-gradient(135deg,#6d4527,#412817);box-shadow:inset 0 3px 5px #ffffff18,inset 0 -3px 5px #00000066}
+.drip{position:absolute;top:-30%;left:20%;width:34%;height:130%;background:linear-gradient(#c9862e,#7c4a1e);border-radius:0 0 20px 20px;filter:blur(.5px);opacity:0;animation:pourM 6s cubic-bezier(.6,.05,.4,.95) infinite}
+.bar::after{content:"";position:absolute;bottom:-26px;left:8%;right:8%;height:44px;background:radial-gradient(#000000aa,transparent);border-radius:50%}
+.copy{width:min(48%,560px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.42em;color:#e0a04a;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-size:clamp(2.9rem,5vw,5rem);line-height:1.06;color:#f5ead6}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#c2ab90;max-width:400px}
+.origins{margin-top:2.6em;font-size:13px;line-height:2.4;color:#a8916f;font-family:'JetBrains Mono',monospace}
+.go{margin-top:2.8em;width:fit-content;background:#e0a04a;color:#241610;font-weight:600;padding:16px 42px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s}
+.go:hover{transform:scale(1.05);box-shadow:0 0 40px #e0a04a55}
+</style></head><body>
+<div class="bar-wrap"><div class="bar"><div class="sq"></div><div class="sq"></div><div class="sq"></div><div class="sq"></div><div class="drip"></div></div></div>
+<div class="copy">
+<div class="kick">Chocolate with a sense of place</div>
+<h1>Single farm.<br>Single harvest.<br>Unmistakable.</h1>
+<p>Three origins a year, each pressed from one farm's beans within weeks of harvest. When the batch is gone, it's gone until next season.</p>
+<div class="origins">→ MADAGASCAR '24 · sold out<br>→ ECUADOR '25 · 84 bars left<br>→ PERU · arriving november</div>
+<a class="go" href="#">Reserve Ecuador →</a></div></body></html>

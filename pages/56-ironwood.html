@@ -1,28 +1,25 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Ironwood</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
-<style>*{margin:0;box-sizing:border-box}body{background:#22201c;color:#e9e4da;font-family:'Source Sans 3',sans-serif;min-height:100vh}
-header{display:flex;justify-content:space-between;padding:24px 6vw;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#a89d8b;border-bottom:1px solid #ffffff12}
-.hero{display:grid;grid-template-columns:1fr 1fr;min-height:86vh}
-@media(max-width:800px){.hero{grid-template-columns:1fr}}
-.planks{position:relative;overflow:hidden;background:#1a1815}
-.plank{position:absolute;height:100%;width:17%;top:0;background:linear-gradient(90deg,#2e2a23,#26221c);border-right:1px solid #00000066;animation:plankin .7s cubic-bezier(.2,.9,.3,1) both}
-.plank:nth-child(odd){background:#332d25}.p2{left:17%;animation-delay:.08s}.p3{left:34%;animation-delay:.16s}.p4{left:51%;animation-delay:.24s}.p5{left:68%;animation-delay:.32s}.p6{left:85%;animation-delay:.4s;width:20%}
-@keyframes plankin{from{transform:translateY(-100%)}}
-.copy{padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
-.kick{font-family:Oswald;font-size:12px;letter-spacing:.42em;color:#c9862e;text-transform:uppercase;margin-bottom:2.4em}
+<!doctype html><html><head><meta charset="utf-8"><title>Ironwood Ops</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#191713;color:#e8e2d4;font-family:'Source Sans 3',sans-serif;height:100vh;overflow:hidden;display:flex}
+.press{flex:1;position:relative;background:#141210;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hammer{position:absolute;width:120px;height:22px;background:linear-gradient(#6d5238,#4a3826);border-radius:5px;top:30%;left:50%;margin-left:-60px;transform-origin:left center;animation:strikeH 1.8s cubic-bezier(.7,0,.9,1) infinite}
+.hammer::before{content:"";position:absolute;right:-34px;top:-20px;width:36px;height:62px;background:#8a95a3;border-radius:8px}
+.anvil{position:absolute;bottom:26%;width:170px;height:70px;background:#3a3f4a;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.sparks i{position:absolute;bottom:44%;left:56%;width:6px;height:6px;border-radius:50%;background:#ffcf5c;opacity:0}
+.sparks i:nth-child(1){--dx:40px;--dy:-60px}.sparks i:nth-child(2){--dx:-30px;--dy:-74px;animation-delay:.12s}.sparks i:nth-child(3){--dx:66px;--dy:-40px;animation-delay:.24s}
+@keyframes strikeH{0%,42%,100%{transform:rotate(0)}14%{transform:rotate(-64deg)}28%{transform:rotate(4deg)}}
+.copy{width:min(52%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center}
+.kick{font-family:Oswald;font-size:12px;letter-spacing:.45em;color:#c9862e;text-transform:uppercase;margin-bottom:2.2em}
 h1{font-family:Oswald;font-weight:300;font-size:clamp(2.8rem,5vw,5rem);line-height:1.04;text-transform:uppercase}
-h1 b{color:#c9862e;font-weight:600}
-p{margin-top:2em;max-width:430px;font-weight:300;font-size:15px;line-height:2;color:#b0a695}
-.list{margin-top:2.6em;line-height:2.3;font-size:14px;color:#cdc3b2}
-.list b{color:#c9862e;margin-right:14px;font-family:Oswald;font-weight:300}
-.go{margin-top:2.8em;width:fit-content;background:#c9862e;color:#22201c;padding:16px 44px;text-decoration:none;font-family:Oswald;font-weight:600;font-size:13px;letter-spacing:.22em;text-transform:uppercase;transition:.25s}
-.go:hover{background:#e0a04a;letter-spacing:.3em}
+h1 b{color:#c9862e;font-weight:500}
+p{margin-top:2em;max-width:420px;font-weight:300;font-size:15px;line-height:2;color:#b3a68c}
+.facts{display:flex;gap:44px;margin-top:3em;font-family:Oswald}
+.f b{display:block;font-size:32px;color:#e0a04a}
+.f span{font-size:11px;letter-spacing:.2em;color:#8f8471;text-transform:uppercase}
 </style></head><body>
-<header><span>IRONWOOD</span><span>OPERATIONS · BUILT TO BEAR LOAD</span></header>
-<div class="hero"><div class="planks"><div class="plank p1"></div><div class="plank p2"></div><div class="plank p3"></div><div class="plank p4"></div><div class="plank p5"></div><div class="plank p6"></div></div>
+<div class="press"><div class="hammer"></div><div class="anvil"></div><div class="sparks"><i></i><i></i><i></i></div></div>
 <div class="copy">
-<div class="kick">Operations consulting · Manufacturing & logistics</div>
-<h1>Ops that hold<br>when <b>everything</b><br>else shakes.</h1>
-<p>We design the boring machinery — handoffs, buffers, escalation paths — that keeps your operation standing on its worst week, not just its best.</p>
-<div class="list"><span><b>I.</b>Process audits with teeth</span><br><span><b>II.</b>Playbooks your night shift will actually use</span><br><span><b>III.</b>Metrics that survive contact with reality</span></div>
-<a class="go" href="#">Request a site visit</a></div></div></body></html>
+<div class="kick">Operations that hold up under pressure</div>
+<h1>Built for your<br><b>worst week,</b><br>not your best.</h1>
+<p>Any operation works when everything goes right. Ironwood designs the handoffs, buffers, and escalation paths that keep you standing when it doesn't.</p>
+<div class="facts"><div class="f"><b>31%</b><span>avg. downtime reduction</span></div><div class="f"><b>6 wks</b><span>typical engagement</span></div></div></div></body></html>

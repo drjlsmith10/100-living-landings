@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><title>True North</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#0c1420;color:#e8eef4;font-family:Sora,sans-serif;height:100vh;overflow:hidden;display:flex;align-items:center;padding:0 7vw}
+.wrap{display:flex;width:100%;gap:min(6vw,80px);align-items:center}
+@media(max-width:840px){.wrap{flex-direction:column-reverse}.pipe-viz{width:min(84vw,360px)!important}}
+.copy{flex:1;max-width:520px}
+.kick{font-size:11px;letter-spacing:.42em;color:#4dc9b0;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.7rem,4.8vw,4.6rem);line-height:1.06}
+h1 b{color:#4dc9b0;font-weight:700}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#93a8b5;max-width:400px}
+.stages{display:flex;gap:10px;margin-top:3em;align-items:center;font-size:12px;color:#6e8494;flex-wrap:wrap}
+.st{border:1.5px solid #243442;padding:9px 18px;border-radius:999px;transition:.25s}
+.st.hot{border-color:#4dc9b0;color:#4dc9b0;background:#4dc9b014}
+.arrow-c{color:#3a4a58}
+.go{margin-top:2.8em;display:inline-block;background:#4dc9b0;color:#0c1420;font-weight:700;padding:16px 42px;border-radius:8px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #4dc9b044}
+.pipe-viz{width:min(38vw,340px);position:relative;height:300px}
+.pipes svg{width:100%;height:100%}
+.pline{fill:none;stroke:#1c2a38;stroke-width:12;stroke-linecap:round}
+.pflow{fill:none;stroke:#4dc9b0;stroke-width:5;stroke-linecap:round;stroke-dasharray:20 260;animation:flowP 3s linear infinite}
+@keyframes flowP{to{stroke-dashoffset:-280}}
+.deal{position:absolute;font-size:11px;background:#12222c;border:1px solid #4dc9b055;border-radius:8px;padding:8px 13px;color:#9fd8cb}
+.d1{top:6%;left:2%}.d2{top:42%;right:-2%}.d3{bottom:8%;left:14%;background:#4dc9b0;color:#0c1420;font-weight:700}
+</style></head><body>
+<div class="wrap">
+<div class="copy">
+<div class="kick">A simpler sales pipeline</div>
+<h1>Six stages.<br>No spreadsheets.<br><b>Actually followed.</b></h1>
+<p>True North strips pipeline management down to the moves your team already makes — then makes the next move obvious.</p>
+<div class="stages"><span class="st">lead</span><span class="arrow-c">→</span><span class="st hot">conversation</span><span class="arrow-c">→</span><span class="st">proposal</span></div>
+<a class="go" href="#">START FREE — NO DEMO CALL</a></div>
+<div class="pipe-viz"><svg viewBox="0 0 300 300"><path class="pline" d="M50,40 C150,40 60,150 160,150 C250,150 180,260 90,260"/><path class="pflow" d="M50,40 C150,40 60,150 160,150 C250,150 180,260 90,260"/></svg>
+<span class="deal d1">Acme Corp · $48k</span><span class="deal d2">Bluefin · $120k</span><span class="deal d3">✓ Closed: Juniper</span></div></div></body></html>
