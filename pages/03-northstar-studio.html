@@ -1,24 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Northstar Studio — Help that actually helps</title><meta name="description" content="Senior help without the agency theater. You work directly with the person doing the work."><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#102a24;--accent:#b8e986;--paper:#eff8ee}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Manrope',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#102a24;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #b8e98666}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#102a24;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#102a24}.below h3{margin:.4rem 0}.card{border-left:3px solid #b8e986;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Northstar Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#efeae0;color:#171512;min-height:100vh;font-family:'Space Mono',monospace;overflow-x:hidden}
+nav{display:flex;justify-content:space-between;padding:28px 6vw;font-size:12px;letter-spacing:.2em}
+.hero{text-align:center;padding:12vh 6vw 8vh;position:relative}
+h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(3.4rem,10vw,9rem);line-height:.95}
+h1 span{display:inline-block;animation:lift 1s cubic-bezier(.2,.9,.2,1) both}
+h1 span:nth-child(2){animation-delay:.08s}h1 span:nth-child(3){animation-delay:.16s}h1 span:nth-child(4){animation-delay:.24s}
+@keyframes lift{from{transform:translateY(60px);opacity:0}}
+.rule{width:0;height:2px;background:#171512;margin:5vh auto 0;animation:grow 1.4s .5s ease forwards}
+@keyframes grow{to{width:70vw}}
+.sub{max-width:430px;margin:6vh auto 0;font-size:13px;line-height:2}
+.works{display:flex;justify-content:center;gap:2px;margin:9vh 0 0;flex-wrap:wrap}
+.w{width:180px;height:240px;position:relative;overflow:hidden;cursor:pointer}
+.w img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:.5s}
+.w:hover img{filter:none;transform:scale(1.06)}
+.w b{position:absolute;bottom:10px;left:12px;font-size:10px;letter-spacing:.2em;color:#fff;mix-blend-mode:difference}
+footer{padding:8vh 6vw 10vh;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.2em}
+footer a{color:inherit}
+.star8{position:absolute;top:8vh;right:12vw;width:54px;height:54px;background:#c8502e;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);animation:rot 9s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
 </style></head><body>
-<nav><div class="logo">Northstar Studio</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">service · no. 3</div><h1>Northstar Studio</h1><p class="lead">Help that actually helps. Senior help without the agency theater. You work directly with the person doing the work.</p><a class="cta" href="#contact">Book an intro call</a></div>
-  <div class="stage"><div class="sc-star"><svg viewBox="0 0 300 170"><polygon points="20,160 90,70 130,115 180,40 280,160" fill="#ffffff14"/><g class="nstar" transform="translate(180,34)"><path d="M0,-16 L4,-4 L16,0 L4,4 L0,16 L-4,4 L-16,0 L-4,-4 Z" fill="var(--accent)"/></g><circle class="pulse-ring" cx="180" cy="34" r="10" fill="none" stroke="var(--accent)"/></svg><style>.sc-star svg{width:min(80vw,480px)}.nstar{animation:twinkle 2.6s ease-in-out infinite;transform-origin:180px 34px}.pulse-ring{animation:pring 2.6s ease-out infinite}@keyframes twinkle{50%{opacity:.35}}@keyframes pring{from{opacity:.8;r:8}to{opacity:0;r:34}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Northstar Studio · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<nav><span>NORTHSTAR*</span><span>EST. 2019 — PORTLAND</span></nav>
+<div class="hero"><div class="star8"></div><h1><span>Brands</span> <span>with</span> <span>a</span> <span>compass.</span></h1><div class="rule"></div><p class="sub">A brand strategy studio for founders who refuse beige. We find the true north of your company and point everything at it.</p></div>
+<div class="works"><div class="w"><img src="https://picsum.photos/seed/ns1/360/480" alt=""><b>FERN & CO</b></div><div class="w"><img src="https://picsum.photos/seed/ns2/360/480" alt=""><b>KILN</b></div><div class="w"><img src="https://picsum.photos/seed/ns3/360/480" alt=""><b>HALCYON</b></div><div class="w"><img src="https://picsum.photos/seed/ns4/360/480" alt=""><b>MOTH</b></div></div>
+<footer><span>© NORTHSTAR STUDIO</span><a href="#">START A PROJECT ↗</a></footer></body></html>

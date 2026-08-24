@@ -1,24 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tandem — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#151515;--accent:#ff6b4a;--paper:#fff7f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'DM Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#151515;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #ff6b4a66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#151515;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#151515}.below h3{margin:.4rem 0}.card{border-left:3px solid #ff6b4a;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Tandem</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#12241c;color:#e6f2ea;font-family:sans-serif;height:100vh;overflow:hidden;display:flex;align-items:center}
+.wheel{position:absolute;border-radius:50%;border:1.5px solid #2b4a3a}
+.w1{width:70vmin;height:70vmin;left:-24vmin;top:50%;margin-top:-35vmin;animation:roll 26s linear infinite}
+.w2{width:44vmin;height:44vmin;left:-14vmin;top:50%;margin-top:-22vmin;animation:roll 18s linear infinite reverse;border-color:#233d30}
+@keyframes roll{to{transform:rotate(360deg)}}
+.copy{position:relative;z-index:1;padding-left:min(30vw,420px);padding-right:8vw;max-width:900px}
+.kick{font-size:11px;letter-spacing:.42em;color:#5fd08a;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.7rem,5.4vw,4.9rem);line-height:1.05;letter-spacing:-.02em}
+h1 b{font-weight:700;color:#5fd08a}
+p{margin-top:2em;max-width:430px;font-weight:300;font-size:14.5px;line-height:2;color:#a3c0af}
+.match{display:flex;margin-top:3em}
+.face{width:64px;height:64px;border-radius:50%;background:#1d382c;border:3px solid #12241c;display:flex;align-items:center;justify-content:center;font-size:26px;margin-left:-16px;transition:.3s;cursor:pointer}
+.face:first-child{margin-left:0;background:#5fd08a;color:#12241c}
+.face:hover{transform:translateY(-10px)}
+.pct{margin-top:1.4em;font-size:12px;color:#7ba68f;letter-spacing:.12em}
+.go{display:inline-block;margin-top:2.6em;background:#5fd08a;color:#12241c;font-weight:600;padding:17px 40px;border-radius:999px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{box-shadow:0 0 40px #5fd08a55}
 </style></head><body>
-<nav><div class="logo">Tandem</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 21</div><h1>Tandem</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-tandem"><div class="bikeB"><i class="wheel w1"></i><i class="wheel w2"></i><div class="frameF"></div><span class="riderA">🚴</span><span class="riderB">🚴</span></div><style>.sc-tandem{width:min(72vw,340px)}.bikeB{position:relative;height:170px}.wheel{position:absolute;bottom:0;width:74px;height:74px;border:7px solid var(--paper);border-radius:50%;animation:wheelspin 1.1s linear infinite}.w1{left:14px}.w2{right:14px}.frameF{position:absolute;bottom:34px;left:44px;right:44px;height:9px;background:var(--accent);border-radius:5px}.riderA{position:absolute;bottom:52px;left:52px;font-size:37px}.riderB{position:absolute;bottom:52px;right:52px;font-size:37px}@keyframes wheelspin{to{transform:rotate(360deg)}}@keyframes none{}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Tandem · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="wheel w1"></div><div class="wheel w2"></div>
+<div class="copy">
+<div class="kick">Pair your best people with their best work</div>
+<h1>Great teams aren't staffed.<br>They're <b>geared.</b></h1>
+<p>Tandem reads how your team actually likes to work — depth vs. speed, solo vs. swarm — and pairs projects so everyone's pedaling at their natural cadence.</p>
+<div class="match"><span class="face">🧠</span><span class="face">⚡</span><span class="face">🔬</span><span class="face">🎨</span></div>
+<div class="pct">94% of pilots kept every pairing after month one</div><br>
+<a class="go" href="#">FIND MY TEAM'S GEAR RATIO →</a></div></body></html>

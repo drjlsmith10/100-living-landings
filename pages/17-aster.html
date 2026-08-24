@@ -1,24 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aster — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#191d29;--accent:#a7b5ff;--paper:#f4f5ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'IBM Plex Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#191d29;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #a7b5ff66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#191d29;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#191d29}.below h3{margin:.4rem 0}.card{border-left:3px solid #a7b5ff;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Aster</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#f7f3ee;color:#4a4038;font-family:sans-serif;min-height:100vh;display:flex;align-items:center}
+.half{flex:1;padding:10vh 6vw}
+@media(max-width:780px){body{flex-direction:column-reverse}.vis{min-height:46vh}}
+.vis{background:linear-gradient(160deg,#efe4da,#e2cfc0);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.drop{width:min(34vw,240px);aspect-ratio:.82;background:radial-gradient(circle at 32% 26%,#fff,#f0ddd0 55%,#dcc3b1);border-radius:50% 50% 50% 50%/58% 58% 42% 42%;box-shadow:inset -14px -18px 34px #c8a98f44,0 30px 70px #b08d6f33;display:flex;align-items:center;justify-content:center;animation:hoverD 5s ease-in-out infinite alternate}
+@keyframes hoverD{to{transform:translateY(-16px)}}
+.drop span{font-size:11px;letter-spacing:.35em;color:#a08772;text-transform:uppercase;text-align:center;line-height:2.2}
+.ring{position:absolute;border:1px solid #b99b8044;border-radius:50%;animation:ringp 6s ease-out infinite}
+.r1{width:300px;height:300px}.r2{width:420px;height:420px;animation-delay:2s}.r3{width:560px;height:560px;animation-delay:4s}
+@keyframes ringp{from{transform:scale(.7);opacity:.9}to{transform:scale(1.25);opacity:0}}
+.kick{font-size:11px;letter-spacing:.45em;color:#b0764f;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.5rem,4.6vw,4.2rem);line-height:1.06;letter-spacing:-.02em;color:#3d332b}
+h1 em{color:#b0764f}
+ul{list-style:none;margin-top:2.8em}
+li{padding:15px 0;border-top:1px solid #e5dbcf;font-weight:300;font-size:14px;color:#6b5f52;display:flex;gap:16px;align-items:baseline}
+li b{color:#4a4038;font-weight:600}
+.try{margin-top:3em;display:inline-block;background:#4a4038;color:#f7f3ee;padding:17px 44px;border-radius:999px;text-decoration:none;font-size:12.5px;letter-spacing:.22em;transition:.3s}
+.try:hover{background:#b0764f}
+.note{margin-top:1.6em;font-size:11.5px;color:#a09485;letter-spacing:.06em}
 </style></head><body>
-<nav><div class="logo">Aster</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 17</div><h1>Aster</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-skincare"><div class="drop17"><i class="shine"></i></div><style>.sc-skincare .drop17{position:relative;width:120px;height:150px;margin:auto;background:radial-gradient(circle at 34% 26%,#fdf3ee,#e8cdbf 58%,#caa48f);border-radius:50% 50% 50% 50%/62% 62% 38% 38%;animation:bobD 4s ease-in-out infinite alternate;box-shadow:inset -10px -12px 22px #00000018}.shine{position:absolute;top:20px;left:24px;width:22px;height:38px;border-radius:50%;background:#ffffffaa;filter:blur(2px);transform:rotate(-22deg)}@keyframes bobD{to{transform:translateY(13px) scale(1.03)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Aster · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="half vis"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="drop"><span>aster<br>·<br>daily cream</span></div></div>
+<div class="half">
+<div class="kick">Skincare for sensitive days</div>
+<h1>Seven ingredients.<br>None of them <em>argue</em><br>with your skin.</h1>
+<ul>
+<li><b>01</b> oat lipids — the calm</li>
+<li><b>02</b> squalane — the softness</li>
+<li><b>03</b> panthenol — the repair</li>
+<li><b>04</b> that's basically it — the point</li>
+</ul>
+<a class="try" href="#">TRY IT 30 NIGHTS · $32</a><div class="note">Fragrance-free · derm-tested · refillable glass</div></div></body></html>

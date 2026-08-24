@@ -1,24 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Soft Signal — Help that actually helps</title><meta name="description" content="Senior help without the agency theater. You work directly with the person doing the work."><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#30110d;--accent:#f5a25d;--paper:#fff5e9}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Libre Baskerville',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#30110d;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #f5a25d66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#30110d;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#30110d}.below h3{margin:.4rem 0}.card{border-left:3px solid #f5a25d;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Soft Signal</title>
+<style>*{margin:0;box-sizing:border-box}body{height:100vh;overflow:hidden;background:#131318;color:#e8e4dc;display:flex;align-items:center;font-family:sans-serif}
+.vinyl{position:relative;width:min(72vw,480px);height:100vh;flex-shrink:0}
+.disc{position:absolute;top:50%;left:60%;transform:translate(-50%,-50%);width:min(80vw,520px);height:min(80vw,520px);border-radius:50%;background:repeating-radial-gradient(circle,#17171d 0 2.5px,#101015 2.5px 6px);animation:spin 5s linear infinite;box-shadow:0 0 90px #000000aa}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.label{position:absolute;inset:31%;border-radius:50%;background:radial-gradient(#f26daa,#7c3aed);display:flex;align-items:center;justify-content:center}
+.label::after{content:"";width:11%;aspect-ratio:1;background:#131318;border-radius:50%}
+.copy{padding:0 7vw 0 0;max-width:520px;z-index:2;position:relative}
+.kicker{font-size:11px;letter-spacing:.45em;color:#f26daa;text-transform:uppercase;margin-bottom:2em}
+h1{font-weight:200;font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:1.05;letter-spacing:-.02em}
+h1 b{color:#b9a8ff}
+p{margin-top:1.8em;font-size:14px;line-height:1.95;font-weight:300;color:#a49e93;max-width:380px}
+.eq{display:flex;gap:5px;align-items:flex-end;height:34px;margin-top:2.6em}
+.eq i{width:5px;background:#f26daa;border-radius:3px;animation:eq .9s ease-in-out infinite alternate}
+.eq i:nth-child(1){height:30%}.eq i:nth-child(2){height:80%;animation-delay:.12s}.eq i:nth-child(3){height:50%;animation-delay:.24s}.eq i:nth-child(4){height:95%;animation-delay:.36s}.eq i:nth-child(5){height:40%;animation-delay:.48s}.eq i:nth-child(6){height:70%;animation-delay:.6s}
+@keyframes eq{to{transform:scaleY(.25)}}
+.listen{display:inline-block;margin-top:2.4em;color:#131318;background:#e8e4dc;padding:15px 36px;border-radius:999px;text-decoration:none;font-size:12px;letter-spacing:.28em;transition:.3s}
+.listen:hover{background:#f26daa;color:#fff}
 </style></head><body>
-<nav><div class="logo">Soft Signal</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">service · no. 7</div><h1>Soft Signal</h1><p class="lead">Help that actually helps. Senior help without the agency theater. You work directly with the person doing the work.</p><a class="cta" href="#contact">Book an intro call</a></div>
-  <div class="stage"><div class="sc-vinyl"><div class="disc"><div class="label"></div></div><div class="waves"><span></span><span></span><span></span><span></span></div><style>.sc-vinyl{display:flex;align-items:center;gap:34px}.disc{width:200px;height:200px;border-radius:50%;background:repeating-radial-gradient(circle,#15151d 0 2px,#20202c 2px 5px);position:relative;animation:spinV 4s linear infinite}.label{position:absolute;inset:33%;border-radius:50%;background:var(--accent);box-shadow:inset 0 0 0 6px #00000033}.label:after{content:"";position:absolute;inset:44%;background:var(--bg);border-radius:50%}.waves span{display:block;width:5px;background:var(--accent);border-radius:3px;margin:4px 0;animation:eq 1s ease-in-out infinite}.waves span:nth-child(1){height:16px}.waves span:nth-child(2){height:34px;animation-delay:.15s}.waves span:nth-child(3){height:24px;animation-delay:.3s}.waves span:nth-child(4){height:40px;animation-delay:.45s}@keyframes spinV{to{transform:rotate(360deg)}}@keyframes eq{50%{transform:scaleY(.35)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Soft Signal · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="vinyl"><div class="disc"><div class="label"></div></div></div>
+<div class="copy">
+<div class="kicker">Independent · Ambient · Late night</div>
+<h1>Music for<br>the hour <b>nobody</b><br>else is awake.</h1>
+<p>Soft Signal is a small label pressing ambient and downtempo records in runs of 300. No streaming exclusives, no playlists — just vinyl you put on when the house finally goes quiet.</p>
+<div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i></div><br>
+<a class="listen" href="#">LISTEN TO SIDE A</a></div></body></html>

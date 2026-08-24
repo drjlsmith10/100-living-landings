@@ -1,24 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daybreak — Help that actually helps</title><meta name="description" content="Senior help without the agency theater. You work directly with the person doing the work."><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#0b1020;--accent:#f6c453;--paper:#f7f4ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#0b1020;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #f6c45366}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#0b1020;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#0b1020}.below h3{margin:.4rem 0}.card{border-left:3px solid #f6c453;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Daybreak</title>
+<style>*{margin:0;box-sizing:border-box}body{height:100vh;overflow:hidden;background:#141020;color:#f2ede4;font-family:sans-serif;position:relative}
+.stars i{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.6;animation:twk 4s infinite}
+@keyframes twk{50%{opacity:.1}}
+.horizon{position:absolute;bottom:0;width:100%;height:44%;background:linear-gradient(#241a3e,#0e0a18);clip-path:polygon(0 34%,14% 22%,30% 30%,47% 12%,64% 26%,80% 16%,100% 28%,100% 100%,0 100%)}
+.sunrise{position:absolute;bottom:18%;left:50%;width:130px;height:130px;margin-left:-65px;border-radius:50%;background:radial-gradient(#fff3cf,#ffc36b 62%,#ff9d4d);box-shadow:0 0 100px 40px #ffab5e55;animation:firstlight 10s ease-in-out infinite alternate}
+@keyframes firstlight{from{transform:translateY(90px) scale(.8)}to{transform:translateY(0) scale(1)}}
+.copy{position:relative;z-index:2;padding:15vh 8vw 0;max-width:640px}
+.kick{font-size:11px;letter-spacing:.45em;color:#ffbe7a;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.9rem,6vw,5.5rem);line-height:1.03;letter-spacing:-.02em}
+h1 b{color:#ffbe7a;font-weight:600}
+p{margin-top:2.1em;max-width:430px;font-weight:300;font-size:14.5px;line-height:2;color:#b8adcc}
+.go{margin-top:3em;display:inline-block;background:#ffbe7a;color:#141020;font-weight:700;padding:17px 46px;border-radius:999px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 0 50px #ffbe7a55}
 </style></head><body>
-<nav><div class="logo">Daybreak</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">service · no. 100</div><h1>Daybreak</h1><p class="lead">Help that actually helps. Senior help without the agency theater. You work directly with the person doing the work.</p><a class="cta" href="#contact">Book an intro call</a></div>
-  <div class="stage"><div class="sc-daybreak"><div class="horizonH"><div class="sun100"></div></div><style>.sc-daybreak .horizonH{position:relative;width:min(84vw,470px);height:230px;border-radius:16px;overflow:hidden;background:linear-gradient(#1a1030,#3a1c3f 55%,#7c3050)}.sun100{position:absolute;bottom:-70px;left:50%;width:130px;height:130px;margin-left:-65px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff0c2,#ffb347 62%,#ff7a3c);box-shadow:0 0 70px 30px #ffb34755;animation:sunup 8s ease-in-out infinite alternate}@keyframes sunup{to{bottom:26px}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Daybreak · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="stars"><i style="top:12%;left:18%"></i><i style="top:22%;left:70%;animation-delay:1s"></i><i style="top:8%;left:48%;animation-delay:2s"></i><i style="top:30%;left:86%;animation-delay:.5s"></i><i style="top:38%;left:30%;animation-delay:1.6s"></i></div>
+<div class="sunrise"></div><div class="horizon"></div>
+<div class="copy">
+<div class="kick">Start something worth finishing</div>
+<h1>The project you keep<br>postponing starts<br><b>tomorrow at dawn.</b></h1>
+<p>Daybreak pairs you with one stranger building something similar, a shared morning check-in, and a hard 30-day finish line. Quiet accountability, before the day gets loud.</p>
+<a class="go" href="#">CLAIM TOMORROW'S DAWN →</a></div></body></html>

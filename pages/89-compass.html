@@ -1,24 +1,29 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Compass — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#101a16;--accent:#f2f0df;--paper:#f8f8f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#101a16;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #f2f0df66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#101a16;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#101a16}.below h3{margin:.4rem 0}.card{border-left:3px solid #f2f0df;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Compass</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#faf8f3;color:#2b2820;font-family:Inter,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6vh 5vw}
+.wrap{display:grid;grid-template-columns:auto 1fr;gap:min(7vw,90px);align-items:center;max-width:1050px}
+@media(max-width:840px){.wrap{grid-template-columns:1fr;text-align:center}.dial-wrap{margin:0 auto}.opts{justify-content:center}}
+.dial-wrap{position:relative;width:min(70vw,330px);aspect-ratio:1}
+.dial{width:100%;height:100%;border-radius:50%;border:1.5px solid #c9c2b0;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(#fff,#f4f0e4)}
+.tick{position:absolute;width:2px;height:12px;background:#b8b09a;top:10px;left:calc(50% - 1px);transform-origin:50% calc(min(35vw,165px) - 10px)}
+.needle{position:absolute;top:50%;left:50%;width:4px;height:42%;background:linear-gradient(#d96c2c,#d96c2c00);transform-origin:top;border-radius:3px;margin-left:-2px;animation:seekC 5s cubic-bezier(.65,0,.25,1) infinite}
+.needle::after{content:"";position:absolute;top:-8px;left:-6px;width:16px;height:16px;background:#d96c2c;border-radius:50%}
+@keyframes seekC{0%,18%{transform:rotate(38deg)}38%{transform:rotate(-52deg)}58%{transform:rotate(8deg)}78%,92%{transform:rotate(0)}100%{transform:rotate(38deg)}}
+.copy h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(2.8rem,4.8vw,4.6rem);line-height:1.06;margin:.3em 0}
+.kick{font-size:11px;letter-spacing:.42em;color:#d96c2c;text-transform:uppercase}
+p{max-width:420px;font-weight:300;font-size:15px;line-height:2;color:#75705f}
+.opts{display:flex;gap:12px;margin-top:2.6em;flex-wrap:wrap}
+.o{border:1.5px solid #d9d3c2;padding:12px 24px;border-radius:999px;font-size:13px;cursor:pointer;transition:.22s;background:#fff}
+.o:hover,.o.sel{border-color:#d96c2c;color:#d96c2c;background:#fdf3ea}
+.ask{margin-top:2.6em;display:inline-block;background:#2b2820;color:#faf8f3;padding:17px 44px;border-radius:999px;text-decoration:none;font-size:13px;transition:.25s}
+.ask:hover{background:#d96c2c}
 </style></head><body>
-<nav><div class="logo">Compass</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 89</div><h1>Compass</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-compass89"><svg viewBox="0 0 220 220"><circle cx="110" cy="110" r="92" fill="#ffffff0d" stroke="#ffffff33" stroke-width="3"/><text x="110" y="34" text-anchor="middle" fill="#ffffff88" font-size="15">N</text><text x="110" y="198" text-anchor="middle" fill="#ffffff66" font-size="15">S</text><g id="dialD"><path d="M110,110 L110,44" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/><path d="M110,110 L156,156" stroke="#ffffff77" stroke-width="5" stroke-linecap="round"/></g><circle cx="110" cy="110" r="10" fill="var(--accent)"/></svg><style>.sc-compass89 svg{width:min(52vw,220px)}#dialD{transform-origin:110px 110px;animation:findN 6s cubic-bezier(.6,.05,.3,1) infinite}@keyframes findN{0%{transform:rotate(40deg)}22%{transform:rotate(-30deg)}40%{transform:rotate(8deg)}55%,85%{transform:rotate(0)}100%{transform:rotate(360deg)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Compass · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="wrap">
+<div class="dial-wrap"><div class="dial" id="dial"></div><div class="needle"></div></div>
+<div class="copy">
+<div class="kick">A personal dashboard for decisions</div>
+<h1>What matters now,<br>pointed out daily.</h1>
+<p>Compass surfaces the three decisions closest to their deadline — across work, money, and life — and shows what each is waiting on. Nothing else.</p>
+<div class="opts"><span class="o sel">work</span><span class="o">money</span><span class="o">life</span></div><br>
+<a class="ask" href="#">POINT ME →</a></div></div>
+<script>const dial=document.getElementById('dial');for(let i=0;i<36;i++){const t=document.createElement('div');t.className='tick';t.style.transform=`rotate(${i*10}deg)`;t.style.height=i%9===0?'20px':'10px';dial.appendChild(t)}</script></body></html>

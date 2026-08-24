@@ -1,24 +1,25 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ember Objects — Software with a point of view</title><meta name="description" content="A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards."><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#102a24;--accent:#b8e986;--paper:#eff8ee}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Manrope',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#102a24;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #b8e98666}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#102a24;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#102a24}.below h3{margin:.4rem 0}.card{border-left:3px solid #b8e986;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Ember Objects</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#171310;color:#e9dfd2;font-family:Georgia,serif;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;padding:26px 5vw;font-size:11px;letter-spacing:.35em;border-bottom:1px solid #ffffff14}
+.stage{flex:1;display:flex;align-items:center;padding:0 6vw;gap:5vw;position:relative}
+.glow{position:absolute;left:-8vw;top:50%;transform:translateY(-50%);width:44vw;height:44vw;background:radial-gradient(#c96a2e22,transparent 65%);pointer-events:none}
+.obj{width:min(38vw,340px);aspect-ratio:.72;background:linear-gradient(155deg,#3d2f24,#241b14 70%);border-radius:10px 90px 90px 10px;box-shadow:inset -20px -30px 50px #00000088,inset 8px 12px 30px #ffffff0d,0 40px 80px #00000066,0 0 80px #c96a2e1f;display:flex;align-items:center;justify-content:center;animation:settle 1.2s cubic-bezier(.2,.9,.2,1) both}
+@keyframes settle{from{transform:translateY(50px);opacity:0}}
+.obj span{writing-mode:vertical-rl;font-size:12px;letter-spacing:.6em;color:#c96a2e99}
+.copy{max-width:460px;z-index:1}
+.kick{font-size:11px;letter-spacing:.45em;color:#c96a2e;margin-bottom:2.6em}
+h1{font-weight:400;font-size:clamp(2.7rem,5vw,4.6rem);line-height:1.06}
+h1 em{font-style:italic;color:#d9b48f}
+p{margin-top:2em;font-family:sans-serif;font-weight:300;font-size:14px;line-height:2;color:#a89a89;max-width:380px}
+.buy{margin-top:3em;display:inline-flex;align-items:center;gap:18px;color:#e9dfd2;text-decoration:none;font-size:13px;letter-spacing:.15em;border-bottom:1px solid #c96a2e;padding-bottom:10px;transition:.3s}
+.buy:hover{color:#c96a2e;gap:28px}
+footer{padding:22px 5vw;font-size:11px;letter-spacing:.25em;color:#6b5f52;display:flex;justify-content:space-between;border-top:1px solid #ffffff14}
 </style></head><body>
-<nav><div class="logo">Ember Objects</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">saas · no. 12</div><h1>Ember Objects</h1><p class="lead">Software with a point of view. A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards.</p><a class="cta" href="#contact">Start free</a></div>
-  <div class="stage"><div class="sc-emberobj"><div class="vase"></div><style>.sc-emberobj .vase{position:relative;width:150px;height:210px;margin:auto;background:linear-gradient(115deg,#7c4a32,#5b3522 55%,#8a5638);border-radius:18px 18px 46% 46%/14px 14px 42% 42%;box-shadow:inset 0 -22px 34px #00000044}.vase:before{content:"";position:absolute;top:-16px;left:50%;width:64px;height:32px;margin-left:-32px;background:#5b3522;border-radius:50%}.vase:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(105deg,transparent 38%,#ffb08a33 50%,transparent 62%);animation:sheenV 5.5s ease-in-out infinite}@keyframes sheenV{0%,100%{transform:translateX(-24px)}50%{transform:translateX(24px)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Ember Objects · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<header><span>EMBER OBJECTS</span><span>HANDMADE · NUMBERED · GUARANTEED FOR LIFE</span></header>
+<div class="stage"><div class="glow"></div>
+<div class="obj"><span>No. 007 / 300 — THE DAILY CARAFE</span></div>
+<div class="copy"><div class="kick">Objects with a pulse</div>
+<h1>Things you'll<br>own <em>longer than</em><br>your phone.</h1>
+<p>Each Ember piece is shaped by hand, fired twice, and stamped with its number in the run. When it wears — and it should wear beautifully — we restore it for free. Forever.</p>
+<a class="buy" href="#">THE DAILY CARAFE — $148 →</a></div></div>
+<footer><span>© EMBER OBJECTS</span><span>CURRENT RUN SHIPS IN 2 WEEKS</span></footer></body></html>

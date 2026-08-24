@@ -1,24 +1,38 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Loop — Words worth your time</title><meta name="description" content="Essays and notes published when there is something real to say — never on a content calendar."><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#062d45;--accent:#63d8e6;--paper:#f3fbfc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Sora',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#062d45;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #63d8e666}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#062d45;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#062d45}.below h3{margin:.4rem 0}.card{border-left:3px solid #63d8e6;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Loop</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#14121f;color:#ece9f5;font-family:sans-serif;height:100vh;overflow:hidden;display:flex;align-items:center;padding:0 7vw}
+.wrap{display:flex;width:100%;gap:min(6vw,70px);align-items:center}
+@media(max-width:820px){.viz2{display:none}}
+.copy{max-width:520px;flex:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#a78bfa;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.7rem,5vw,4.8rem);line-height:1.05}
+h1 b{color:#a78bfa;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#a29cb8;max-width:400px}
+.streaks{display:flex;gap:10px;margin-top:2.6em}
+.d{width:34px;height:34px;border-radius:9px;background:#241f38;display:flex;align-items:center;justify-content:center;font-size:14px;animation:flipD .5s both}
+.d.on{background:#a78bfa;color:#14121f}
+@keyframes flipD{from{transform:rotateY(90deg)}}
+.d:nth-child(1){animation-delay:.1s}.d:nth-child(2){animation-delay:.2s}.d:nth-child(3){animation-delay:.3s}.d:nth-child(4){animation-delay:.4s}.d:nth-child(5){animation-delay:.5s}.d:nth-child(6){animation-delay:.6s}.d:nth-child(7){animation-delay:.7s}
+.missed-note{margin-top:1.6em;font-size:12px;color:#7a7394}
+.go{margin-top:2.6em;display:inline-block;background:#a78bfa;color:#14121f;font-weight:700;padding:17px 42px;border-radius:999px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{box-shadow:0 0 44px #a78bfa55;transform:translateY(-2px)}
+.viz2{width:min(36vw,360px)}
+.ring-big{position:relative;width:100%;aspect-ratio:1}
+svg{width:100%;height:100%;transform:rotate(-90deg)}
+.bg-ring{fill:none;stroke:#241f38;stroke-width:13}
+.fg-ring{fill:none;stroke:#a78bfa;stroke-width:13;stroke-linecap:round;stroke-dasharray:785;stroke-dashoffset:785;animation:ringfill 2s cubic-bezier(.2,.8,.2,1) forwards .4s}
+@keyframes ringfill{to{stroke-dashoffset:157}}
+.center-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.center-txt b{font-size:52px;font-weight:200}
+.center-txt span{font-size:11px;letter-spacing:.3em;color:#7a7394;margin-top:6px}
 </style></head><body>
-<nav><div class="logo">Loop</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">blog · no. 55</div><h1>Loop</h1><p class="lead">Words worth your time. Essays and notes published when there is something real to say — never on a content calendar.</p><a class="cta" href="#contact">Read the latest</a></div>
-  <div class="stage"><div class="sc-loop"><div class="ringtrack"><div class="dotr"></div><span class="day d1">M</span><span class="day d2">T</span><span class="day d3">W</span><span class="day d4">T</span><span class="day d5">F</span></div><style>.sc-loop{position:relative;width:250px;height:250px}.ringtrack{position:absolute;inset:0;border-radius:50%;border:4px dashed #ffffff33}.dotr{position:absolute;top:-11px;left:calc(50% - 11px);width:22px;height:22px;border-radius:50%;background:var(--accent);box-shadow:0 0 20px var(--accent);animation:orbitD 6s linear infinite}.day{position:absolute;font-size:12px;color:#ffffffaa;width:26px;text-align:center}.d1{top:calc(50% - 105px);left:112px}.d2{top:82px;right:8px}.d3{bottom:14px;left:112px}.d4{top:82px;left:8px}.d5{top:36px;right:36px}.d5,.d4,.d3{color:var(--accent)}@keyframes orbitD{to{transform:rotate(360deg)}}.ringtrack{animation:none}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Loop · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="wrap">
+<div class="copy">
+<div class="kick">The habit tracker with no guilt</div>
+<h1>Miss a day.<br><b>Keep the streak.</b></h1>
+<p>Loop counts your weekly average, not your perfect record. Life happens on Tuesdays sometimes — your habits shouldn't die because of it.</p>
+<div class="streaks"><span class="d on">✓</span><span class="d on">✓</span><span class="d">·</span><span class="d on">✓</span><span class="d on">✓</span><span class="d on">✓</span><span class="d on">✓</span></div>
+<div class="missed-note">Wednesday happened. Streak intact.</div>
+<a class="go" href="#">START ONE LOOP — FREE</a></div>
+<div class="viz2"><div class="ring-big">
+<svg viewBox="0 0 280 280"><circle class="bg-ring" cx="140" cy="140" r="125"/><circle class="fg-ring" cx="140" cy="140" r="125"/></svg>
+<div class="center-txt"><b>80%</b><span>WEEKLY AVERAGE<br>= STREAK ALIVE</span></div></div></div></div></body></html>

@@ -1,24 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relay — Words worth your time</title><meta name="description" content="Essays and notes published when there is something real to say — never on a content calendar."><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#151515;--accent:#ff6b4a;--paper:#fff7f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'DM Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#151515;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #ff6b4a66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#151515;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#151515}.below h3{margin:.4rem 0}.card{border-left:3px solid #ff6b4a;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Relay</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0f1115;color:#e8eaf0;font-family:sans-serif;height:100vh;overflow:hidden;display:flex;flex-direction:column}
+.bar{display:flex;justify-content:space-between;padding:22px 5vw;font-size:12px;letter-spacing:.2em;border-bottom:1px solid #23262e}
+.bar b{color:#4ade80}
+.stage{flex:1;display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:820px){.stage{grid-template-columns:1fr}.chat{display:none!important}}
+.copy{padding:10vh 6vw;display:flex;flex-direction:column;justify-content:center}
+h1{font-weight:800;font-size:clamp(2.6rem,4.6vw,4.4rem);line-height:1.02;letter-spacing:-.04em}
+h1 span{background:linear-gradient(90deg,#4ade80,#38bdf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin-top:2em;font-size:14.5px;font-weight:300;line-height:2;color:#9aa1b3;max-width:400px}
+.go{margin-top:3em;width:fit-content;background:#4ade80;color:#0f1115;font-weight:600;padding:16px 38px;border-radius:10px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{box-shadow:0 0 40px #4ade8055;transform:translateY(-2px)}
+.chat{border-left:1px solid #23262e;padding:7vh 3vw;display:flex;flex-direction:column;justify-content:center;gap:14px;font-size:13px}
+.bub{max-width:78%;padding:13px 18px;border-radius:14px;animation:pop .45s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes pop{from{transform:translateY(16px) scale(.92);opacity:0}}
+.them{align-self:flex-start;background:#1c1f27;border-bottom-left-radius:4px}
+.me{align-self:flex-end;background:#4ade80;color:#0f1115;font-weight:500;border-bottom-right-radius:4px}
+.bub:nth-child(1){animation-delay:.3s}.bub:nth-child(2){animation-delay:.9s}.bub:nth-child(3){animation-delay:1.5s}.bub:nth-child(4){animation-delay:2.1s}.bub:nth-child(5){animation-delay:2.7s}
+.typing{align-self:flex-start;padding:12px 18px;background:#1c1f27;border-radius:14px;display:flex;gap:5px}
+.typing i{width:6px;height:6px;border-radius:50%;background:#4a5060;animation:dotty 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dotty{40%{transform:translateY(-5px);color:#fff}}
 </style></head><body>
-<nav><div class="logo">Relay</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">blog · no. 11</div><h1>Relay</h1><p class="lead">Words worth your time. Essays and notes published when there is something real to say — never on a content calendar.</p><a class="cta" href="#contact">Read the latest</a></div>
-  <div class="stage"><div class="sc-relay"><svg viewBox="0 0 320 180"><g id="pkgP"><rect x="140" y="60" width="44" height="36" rx="6" fill="var(--accent)"/><path d="M140,74 h44 M162,60 v14" stroke="#00000055" stroke-width="4"/></g><path id="trackT" d="M20,120 Q160,30 300,120" fill="none" stroke="#ffffff33" stroke-width="3" stroke-dasharray="7 8"/></svg><style>.sc-relay svg{width:min(80vw,470px)}#pkgP{animation:shipI 3.8s ease-in-out infinite}#trackT{animation:dashmove 1.2s linear infinite}@keyframes shipI{0%{transform:translate(0,0);opacity:0}12%{opacity:1}50%{transform:translate(-10px,-26px)}88%{opacity:1}100%{transform:translate(96px,0);opacity:0}}@keyframes dashmove{to{stroke-dashoffset:-15}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Relay · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="bar"><span>RELAY</span><b>CLIENT WORK, WITHOUT THE CHAOS</b></div>
+<div class="stage">
+<div class="copy"><h1>The client asked.<br>You answered — <span>already.</span></h1><p>Relay watches your project channels for questions, drafts the answer from your actual project data, and holds it for one tap of approval. Clients think you cloned yourself.</p><a class="go" href="#" class>TRY IT ON YOUR INBOX</a></div>
+<div class="chat">
+<div class="bub them">Hey! Any update on the handoff doc? Client asks 🙃</div>
+<div class="bub typing"><i></i><i></i><i></i></div>
+<div class="bub me">Draft ready — Relay pulled it from yesterday's sync notes. Review & send?</div>
+<div class="bub them">You're kidding. That was fast.</div>
+<div class="bub me">Sent ✓ · logged to timeline · next check-in auto-scheduled Thu</div>
+</div></div></body></html>

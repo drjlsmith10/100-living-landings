@@ -1,24 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Packet Zero — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#062d45;--accent:#63d8e6;--paper:#f3fbfc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Sora',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#062d45;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #63d8e666}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#062d45;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#062d45}.below h3{margin:.4rem 0}.card{border-left:3px solid #63d8e6;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
-</style></head><body>
-<nav><div class="logo">Packet Zero</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 6</div><h1>Packet Zero</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-pkt"><div class="doc"><div class="ln l1"></div><div class="ln l2"></div><div class="ln l3"></div><div class="chip c1">📦</div><div class="chip c2">📦</div><div class="chip c3">📦</div></div><style>.sc-pkt{width:250px;height:290px;position:relative}.doc{position:absolute;inset:0;background:var(--paper);border-radius:14px;padding:26px 22px;color:#111}.ln{height:10px;border-radius:5px;background:#c9c4b8;margin-bottom:14px;overflow:hidden;position:relative}.l1{width:80%}.l2{width:60%}.l3{width:70%}.ln:after{content:"";position:absolute;inset:0;background:var(--accent);transform:scaleX(0);transform-origin:left;animation:writeline 6s ease-in-out infinite}.chip{position:absolute;font-size:26px;animation:intochip 6s ease-in-out infinite}.c1{top:-36px;left:12%}.c2{top:-36px;left:44%;animation-delay:1.2s!important}.c3{top:-36px;left:76%;animation-delay:2.4s!important}@keyframes intochip{0%{transform:translateY(0);opacity:1}18%{transform:translateY(330px);opacity:0}19%{opacity:0}30%{opacity:0}31%{transform:translateY(0);opacity:1}100%{transform:translateY(0);opacity:1}}@keyframes writeline{0%{transform:scaleX(0)}55%{transform:scaleX(1)}100%{transform:scaleX(1)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Packet Zero · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<!doctype html><html><head><meta charset="utf-8"><title>Packet Zero</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#0a0c10;color:#c8f7c3;font-family:'JetBrains Mono',monospace;min-height:100vh;padding:0;overflow-x:hidden}
+.term{max-width:720px;margin:0 auto;padding:12vh 5vw}
+.prompt{color:#5a6a58;font-size:13px;margin-bottom:2.2em}
+.prompt b{color:#c8f7c3;font-weight:400}
+h1{font-size:clamp(1.9rem,4.6vw,3.2rem);font-weight:800;line-height:1.25;letter-spacing:-.02em}
+h1 .cur{display:inline-block;width:.55em;height:1.05em;background:#c8f7c3;vertical-align:-.12em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.line{border-left:2px solid #2e4430;padding:14px 20px;margin:2.2em 0;font-family:sans-serif;font-weight:300;font-size:15px;line-height:1.85;color:#9fb89b}
+.line b{color:#c8f7c3;font-family:'JetBrains Mono';font-weight:400;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:2.6em 0}
+.opt{border:1px solid #2e4430;padding:16px 18px;font-size:12px;transition:.2s;cursor:pointer}
+.opt:hover{background:#c8f7c3;color:#0a0c10;border-color:#c8f7c3}
+.opt em{display:block;font-style:normal;color:#5a6a58;font-size:11px;margin-top:6px}.opt:hover em{color:#0a0c1088}
+.run{display:inline-block;background:#c8f7c3;color:#0a0c10;padding:15px 34px;font-weight:800;font-size:13px;text-decoration:none;letter-spacing:.1em;margin-top:1em;transition:.2s}
+.run:hover{box-shadow:0 0 30px #c8f7c366}
+.scan{position:fixed;top:0;left:0;width:100%;height:2px;background:#c8f7c322;animation:crt 7s linear infinite;pointer-events:none}
+@keyframes crt{to{top:100%}}
+</style></head><body><div class="scan"></div>
+<div class="term">
+<p class="prompt">$ packet-zero --init <b>// your company's AI operating manual, in one document</b></p>
+<h1>Your team uses AI every day.<br>Nobody wrote down the rules.<span class="cur"></span></h1>
+<div class="line"><b>PACKET ZERO</b> is a two-week engagement that turns your scattered AI habits into a single written operating manual — what tools are approved, what data may go where, who reviews what. The document your next audit wishes existed.</div>
+<div class="grid"><div class="opt">01 · TOOL AUDIT<em>every AI touchpoint mapped</em></div><div class="opt">02 · RISK LINES<em>what data goes where, plainly</em></div><div class="opt">03 · THE MANUAL<em>one page per team, signed off</em></div></div>
+<a class="run" href="#">$ RUN ENGAGEMENT →</a>
+</div></body></html>

@@ -1,24 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Morrow Coffee — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#151515;--accent:#ff6b4a;--paper:#fff7f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'DM Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#151515;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #ff6b4a66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#151515;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#151515}.below h3{margin:.4rem 0}.card{border-left:3px solid #ff6b4a;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Morrow Coffee</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{height:100vh;overflow:hidden;font-family:Fraunces,serif;background:linear-gradient(#241b3a,#5d2f52 45%,#b8524f 72%,#eda15c);color:#fff4e6;position:relative}
+.sun{position:absolute;left:50%;bottom:18vh;width:26vmin;height:26vmin;margin-left:-13vmin;border-radius:50%;background:radial-gradient(#fff3cf,#ffb45e 65%,#ff8f47);box-shadow:0 0 12vmin 4vmin #ffab5577;animation:dawn 14s ease-in-out infinite alternate}
+@keyframes dawn{from{transform:translateY(16vh) scale(.75)}to{transform:translateY(-6vh) scale(1)}}
+.ridge{position:absolute;bottom:-12vh;left:-10%;width:130%;height:36vh;border-radius:50% 50% 0 0/100% 100% 0 0;background:#33203f}.ridge.far{left:-30%;height:30vh;background:#4b2b4d;bottom:-8vh}
+.cup{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(64vw,340px)}
+.cup .body{background:#16091c;height:34vh;border-radius:18px 18px 60px 60px/12px 12px 90px 90px;box-shadow:inset -3vmin -1vmin 0 #00000066,inset 2vmin 1vmin 0 #ffffff14}
+.cup .handle{position:absolute;right:-9vmin;top:2vh;width:11vmin;height:13vmin;border:2.6vmin solid #16091c;border-left:none;border-radius:0 5vmin 5vmin 0}
+.steam i{position:absolute;bottom:calc(34vh + 2vmin);left:50%;width:2.4vmin;height:14vmin;margin-left:-1.2vmin;border-radius:50%;background:linear-gradient(#ffe4c199,transparent);filter:blur(.7vmin);animation:rise 6s ease-in-out infinite}
+.steam i:nth-child(2){margin-left:-5vmin;animation-delay:2s}.steam i:nth-child(3){margin-left:2.6vmin;animation-delay:4s}
+@keyframes rise{0%{transform:translateY(2vmin) skewX(0);opacity:0}25%{opacity:.9}100%{transform:translateY(-17vmin) translateX(3vmin) skewX(-14deg);opacity:0}}
+.word{position:absolute;top:9vh;width:100%;text-align:center}
+.word small{letter-spacing:.55em;font-size:11px;text-transform:uppercase;color:#ffd9a8}
+.word h1{font-weight:900;font-style:italic;font-size:clamp(2.6rem,7vw,5rem);line-height:1;margin-top:.3em;text-shadow:0 4px 30px #00000055}
+.word p{font-family:sans-serif;font-weight:300;font-size:13px;opacity:.85;margin-top:1em;letter-spacing:.08em}
+.shop{position:absolute;bottom:5vh;width:100%;text-align:center}
+.shop a{color:#241b3a;background:#ffd9a8;padding:15px 42px;border-radius:999px;text-decoration:none;font-size:12px;letter-spacing:.35em;transition:.3s}
+.shop a:hover{transform:translateY(-4px);box-shadow:0 14px 34px #00000044}
 </style></head><body>
-<nav><div class="logo">Morrow Coffee</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 2</div><h1>Morrow Coffee</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-morrow"><div class="sunbig"></div><div class="hill h3"></div><div class="hill h2"></div><div class="hill h1"></div><div class="birds"><i></i><i></i><i></i></div><div class="cupfront"><div class="steam"><i></i><i></i><i></i></div></div><style>.sc-morrow{position:relative;width:min(88vw,540px);height:420px;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#2b1b4d 0%,#6b3069 38%,#c85a54 62%,#f0975a 80%,#ffd39a 100%)}.sunbig{position:absolute;left:50%;bottom:26%;width:190px;height:190px;margin-left:-95px;border-radius:50%;background:radial-gradient(circle at 50% 42%,#fff6da,#ffce7e 55%,#ff9950);box-shadow:0 0 110px 50px #ffab5e59;animation:sunriseM 12s ease-in-out infinite alternate}.hill{position:absolute;border-radius:50%;left:50%}.h3{width:150%;height:220px;bottom:-140px;margin-left:-75%;background:#4a2547;opacity:.92}.h2{width:120%;height:200px;bottom:-118px;margin-left:-78%;background:#381d3d;opacity:.95}.h1{width:160%;height:180px;bottom:-96px;margin-left:-88%;background:#241229}.birds{position:absolute;top:14%;left:0;width:100%}.birds i{position:absolute;font-size:0;width:16px;height:8px;border-top:3px solid #2a1435;border-radius:60% 60% 0 0;opacity:.75;animation:flyby 14s linear infinite}.birds i:before{content:"";position:absolute;left:13px;top:-3px;width:16px;height:8px;border-top:3px solid #2a1435;border-radius:60% 60% 0 0}.birds i:nth-child(1){top:10px;left:12%;animation-duration:15s}.birds i:nth-child(2){top:44px;left:34%;animation-delay:4s;transform:scale(.72)}.birds i:nth-child(3){top:26px;left:64%;animation-delay:8s;transform:scale(.55)}.cupfront{position:absolute;bottom:-6px;left:50%;margin-left:-90px;width:180px;height:130px;z-index:3}.cupfront:before{content:"";position:absolute;bottom:0;left:0;right:0;height:104px;background:#17091d;border-radius:14px 14px 30px 30px/10px 10px 46px 46px;box-shadow:inset -18px -10px 0 #0e0512,inset 14px 8px 0 #2b1631}.cupfront:after{content:"";position:absolute;bottom:96px;right:-40px;width:56px;height:58px;border:14px solid #17091d;border-left:none;border-radius:0 40px 40px 0}.steam{position:absolute;bottom:112px;left:50%;width:70px;margin-left:-35px}.steam i{position:absolute;bottom:0;width:17px;height:74px;border-radius:50%;background:linear-gradient(#ffe9c9cc,#ffe9c900);filter:blur(7px);animation:steamy 5.2s ease-in-out infinite}.steam i:nth-child(1){left:4px}.steam i:nth-child(2){left:26px;animation-delay:1.7s;height:92px}.steam i:nth-child(3){left:48px;animation-delay:3.4s;height:64px}@keyframes sunriseM{from{transform:translateY(84px) scale(.82);filter:brightness(.85)}to{transform:translateY(-16px) scale(1);filter:brightness(1.1)}}@keyframes flyby{from{transform:translateX(-70px)}to{transform:translateX(600px)}}@keyframes steamy{0%{transform:translateY(0) scaleX(1) skewX(0);opacity:0}18%{opacity:.85}55%{transform:translateY(-46px) translateX(9px) scaleX(1.5) skewX(-7deg)}100%{transform:translateY(-98px) translateX(-7px) scaleX(2.3) skewX(6deg);opacity:0}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Morrow Coffee · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="sun"></div><div class="ridge far"></div><div class="ridge"></div>
+<div class="word"><small>roasted for slow mornings</small><h1>Morrow</h1><p>SMALL-BATCH COFFEE · SHIPS MONDAYS</p></div>
+<div class="cup"><div class="steam"><i></i><i></i><i></i></div><div class="body"></div><div class="handle"></div></div>
+<div class="shop"><a href="#">SHOP THE ROAST</a></div></body></html>

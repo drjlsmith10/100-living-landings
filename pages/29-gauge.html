@@ -1,24 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gauge — Made well. Made once.</title><meta name="description" content="Designed slowly, made carefully, and priced honestly. Fewer things, chosen well."><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#101a16;--accent:#f2f0df;--paper:#f8f8f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#101a16;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #f2f0df66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#101a16;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#101a16}.below h3{margin:.4rem 0}.card{border-left:3px solid #f2f0df;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Gauge</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f8f9fa;color:#1a1d23;font-family:'IBM Plex Sans',sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6vh 5vw}
+.wrap{display:flex;gap:min(6vw,80px);align-items:center;max-width:1100px}
+@media(max-width:860px){.wrap{flex-direction:column}}
+.dash{background:#fff;border-radius:22px;box-shadow:0 24px 70px #1a1d2320;padding:34px;width:min(88vw,380px)}
+.dash h3{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#9aa1ad;margin-bottom:26px;display:flex;justify-content:space-between}.dash h3 b{color:#2ecc71;font-weight:600}
+.metric{padding:15px 0;border-bottom:1px solid #eef0f3;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+.metric:last-child{border:none}
+.metric .v{font-weight:600;font-size:19px}
+.up{color:#27ae60;font-size:12px}.down{color:#e05c4b;font-size:12px}
+.spark{width:90px;height:30px}
+.copy{max-width:480px}
+.kick{font-size:11px;letter-spacing:.42em;color:#e67e22;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.6rem,4.8vw,4.4rem);line-height:1.06}
+h1 b{color:#e67e22;font-weight:600}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#6b7280;max-width:400px}
+.go{margin-top:2.6em;display:inline-block;background:#1a1d23;color:#fff;padding:16px 40px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:600;transition:.25s}
+.go:hover{background:#e67e22;transform:translateY(-2px)}
 </style></head><body>
-<nav><div class="logo">Gauge</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">product · no. 29</div><h1>Gauge</h1><p class="lead">Made well. Made once.. Designed slowly, made carefully, and priced honestly. Fewer things, chosen well.</p><a class="cta" href="#contact">Browse the shop</a></div>
-  <div class="stage"><div class="sc-gauge"><svg viewBox="0 0 220 140"><path d="M25,125 A85,85 0 0 1 195,125" fill="none" stroke="#ffffff2b" stroke-width="17" stroke-linecap="round"/><path id="gfill" d="M25,125 A85,85 0 0 1 195,125" fill="none" stroke="var(--accent)" stroke-width="17" stroke-linecap="round"/><line id="needle" x1="110" y1="125" x2="42" y2="80" stroke="var(--paper)" stroke-width="4" stroke-linecap="round"/><circle cx="110" cy="125" r="9" fill="var(--paper)"/></svg><style>.sc-gauge svg{width:min(64vw,300px)}#gfill{stroke-dasharray:270;stroke-dashoffset:270;animation:gaugeup 4.5s cubic-bezier(.6,0,.2,1) infinite alternate}#needle{transform-origin:110px 125px;animation:sweepN 4.5s cubic-bezier(.6,0,.2,1) infinite alternate}@keyframes gaugeup{to{stroke-dashoffset:60}}@keyframes sweepN{to{transform:rotate(112deg)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Gauge · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="wrap">
+<div class="copy">
+<div class="kick">Metrics the whole team reads</div>
+<h1>Numbers your team<br>checks <b>willingly.</b></h1>
+<p>Gauge shows the five numbers that matter on one screen, in language humans use — updated live, explained inline, argued about never.</p>
+<a class="go" href="#">SEE A LIVE DEMO →</a></div>
+<div class="dash"><h3>THIS WEEK <b>● LIVE</b></h3>
+<div class="metric"><span>Revenue</span><span style="display:flex;gap:12px;align-items:center"><svg class="spark" viewBox="0 0 90 30"><polyline points="0,24 15,20 30,25 45,14 60,17 75,8 90,4" fill="none" stroke="#2ecc71" stroke-width="2.5"/></svg><span class="v">$48.2k</span><span class="up">↑ 12%</span></span></div>
+<div class="metric"><span>New signups</span><span class="v">214</span></div>
+<div class="metric"><span>Churn</span><span class="v">1.1% <span class="down">↓ 0.3</span></span></div>
+<div class="metric"><span>Support load</span><span class="v">Light ✓</span></div>
+<div class="metric"><span>Team mood (opt-in)</span><span class="v">🙂🙂🙂🙂😐</span></div></div></div></body></html>

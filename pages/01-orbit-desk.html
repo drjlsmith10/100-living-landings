@@ -1,24 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orbit Desk — Software with a point of view</title><meta name="description" content="A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards."><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#0b1020;--accent:#f6c453;--paper:#f7f4ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#0b1020;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #f6c45366}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#0b1020;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#0b1020}.below h3{margin:.4rem 0}.card{border-left:3px solid #f6c453;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Orbit Desk</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;700&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#05060a;color:#e8ecff;font-family:Unbounded,sans-serif;height:100vh;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:tw 3s infinite}
+@keyframes tw{50%{opacity:.15}}
+.wrap{position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 9vw;z-index:2}
+.tag{font-size:11px;letter-spacing:.5em;color:#7c8cff;text-transform:uppercase}
+h1{font-weight:300;font-size:clamp(3rem,7vw,6rem);line-height:1.05;margin:.4em 0}
+h1 b{font-weight:700;color:#aab6ff}
+p{max-width:420px;font-size:14px;line-height:1.9;color:#9aa2c7;font-family:sans-serif}
+a{margin-top:2.4em;display:inline-block;width:fit-content;color:#05060a;background:#aab6ff;padding:16px 38px;border-radius:999px;text-decoration:none;font-size:12px;letter-spacing:.2em;transition:.3s}
+a:hover{box-shadow:0 0 40px #7c8cff88;transform:scale(1.05)}
+.orbit{position:absolute;right:-12vw;top:50%;width:56vw;height:56vw;transform:translateY(-50%);border:1px solid #ffffff14;border-radius:50%;animation:spin 40s linear infinite}
+.orbit::before,.orbit::after{content:"";position:absolute;border-radius:50%;background:#aab6ff}
+.orbit::before{top:-5px;left:50%;width:10px;height:10px;box-shadow:0 0 18px #aab6ff}
+.orbit::after{inset:18%;border:1px dashed #ffffff22;background:none}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
 </style></head><body>
-<nav><div class="logo">Orbit Desk</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">saas · no. 1</div><h1>Orbit Desk</h1><p class="lead">Software with a point of view. A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards.</p><a class="cta" href="#contact">Start free</a></div>
-  <div class="stage"><div class="sc-orbit"><div class="sun-core"></div><div class="ring r1"><i>📊</i></div><div class="ring r2"><i>📝</i></div><div class="ring r3"><i>💬</i></div><style>.sc-orbit{position:relative;width:min(46vw,380px);height:min(46vw,380px)}.sun-core{position:absolute;inset:34%;background:var(--accent);border-radius:26%;animation:pulseC 3s ease-in-out infinite}.ring{position:absolute;inset:0;border:1px dashed #ffffff33;border-radius:50%;animation:spinO 14s linear infinite}.r2{inset:-12%;animation-duration:22s;animation-direction:reverse}.r3{inset:-24%;animation-duration:30s}.ring i{position:absolute;top:-4%;left:50%;font-size:28px;font-style:normal;transform:translateX(-50%)}@keyframes spinO{to{transform:rotate(360deg)}}@keyframes pulseC{50%{transform:scale(1.12);border-radius:50%}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Orbit Desk · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="orbit"></div><div class="star" style="top:12%;left:20%"></div><div class="star" style="top:70%;left:8%;animation-delay:1s"></div><div class="star" style="top:30%;left:80%;animation-delay:2s"></div><div class="star" style="top:85%;left:60%;animation-delay:.5s"></div>
+<div class="wrap"><div class="tag">Focus OS · v3</div><h1>Work in<br><b>quiet orbit.</b></h1><p>One task at center stage. Everything else drifts to the edge until you're ready. Orbit Desk is the anti-tab, the calm command deck for people drowning in open loops.</p><a href="#">ENTER ORBIT →</a></div></body></html>

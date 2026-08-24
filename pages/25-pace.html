@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Pace</title>
+<style>*{margin:0;box-sizing:border-box}body{height:100vh;overflow:hidden;background:#101418;color:#eef3f6;font-family:sans-serif;position:relative}
+.track{position:absolute;bottom:0;left:0;width:100%;height:34vh;background:repeating-linear-gradient(90deg,#1a2026 0 60px,#141920 60px 120px)}
+.lane-line{position:absolute;bottom:0;height:100%;width:2px;background:#ffffff12}
+.runner{position:absolute;bottom:26vh;left:-70px;font-size:44px;animation:sprintP 7s linear infinite;filter:drop-shadow(0 10px 14px #00000088)}
+@keyframes sprintP{to{left:108%}}
+.paceband{position:absolute;top:8vh;right:6vw;text-align:right;z-index:2}
+.paceband b{font-size:min(11vw,74px);font-weight:200;color:#5eead4;line-height:1}
+.paceband span{display:block;font-size:11px;letter-spacing:.35em;color:#7a8a94;margin-top:10px}
+.copy{position:relative;z-index:2;padding:16vh 0 0 8vw;max-width:600px}
+.kick{font-size:11px;letter-spacing:.42em;color:#5eead4;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.7rem,5.4vw,4.9rem);line-height:1.04;letter-spacing:-.02em}
+p{margin-top:2.1em;max-width:420px;font-weight:300;font-size:14.5px;line-height:2;color:#a9bcc4}
+.go{margin-top:3em;display:inline-block;background:#5eead4;color:#101418;font-weight:700;padding:17px 42px;border-radius:999px;text-decoration:none;font-size:13px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 16px 40px #5eead433}
+</style></head><body>
+<div class="track"><div class="lane-line" style="left:20%"></div><div class="lane-line" style="left:45%"></div><div class="lane-line" style="left:72%"></div></div>
+<div class="runner">🏃</div>
+<div class="paceband"><b id="pace">5:48</b><span>YOUR ADAPTIVE PACE</span></div>
+<div class="copy">
+<div class="kick">Training that respects your life</div>
+<h1>The plan bends.<br>You don't <b>break.</b></h1>
+<p>Slept badly? Work imploded? Pace rebuilds today's workout around reality instead of guilt-tripping you toward a plan written for someone with no job and perfect sleep.</p>
+<a class="go" href="#">BUILD MY WEEK →</a></div>
+<script>setInterval(()=>{const m=5+Math.floor(Math.random()*2),s=30+Math.floor(Math.random()*29);document.getElementById('pace').textContent=m+':'+String(s).padStart(2,'0')},1800)</script></body></html>

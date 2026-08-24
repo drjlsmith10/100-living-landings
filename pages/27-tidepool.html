@@ -1,24 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tidepool — Words worth your time</title><meta name="description" content="Essays and notes published when there is something real to say — never on a content calendar."><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#191d29;--accent:#a7b5ff;--paper:#f4f5ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'IBM Plex Sans',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#191d29;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #a7b5ff66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#191d29;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#191d29}.below h3{margin:.4rem 0}.card{border-left:3px solid #a7b5ff;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Tidepool</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{height:100vh;overflow:hidden;background:#0f2e33;color:#e6f4f1;font-family:Quicksand,sans-serif;position:relative}
+.pool{position:absolute;bottom:-30vh;left:-20vw;width:140vw;height:70vh;border-radius:50%;background:radial-gradient(#1b4a52,#123137 70%);animation:tideT 9s ease-in-out infinite alternate}
+@keyframes tideT{to{transform:translateY(-5vh)}}
+.foam{position:absolute;bottom:-32vh;left:-20vw;width:140vw;height:70vh;border-radius:50%;border-top:3px solid #a8dcd244;animation:tideT 11s ease-in-out infinite alternate-reverse}
+.shell{position:absolute;bottom:16vh;left:14vw;width:54px;height:54px;background:#e8b48c;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:inset -8px -8px 0 #c98c62;animation:settleS 1.4s cubic-bezier(.2,.9,.3,1.3) both .3s}
+.star{position:absolute;bottom:12vh;right:16vw;width:58px;height:58px;background:#e07b6a;clip-path:polygon(50% 0,63% 36%,100% 39%,72% 61%,80% 100%,50% 77%,20% 100%,28% 61%,0 39%,37% 36%);animation:creep 12s ease-in-out infinite alternate}
+@keyframes creep{to{transform:translateX(-40px) rotate(18deg)}}
+.copy{position:absolute;top:14vh;left:8vw;max-width:520px;z-index:2}
+.kick{font-size:11px;letter-spacing:.45em;color:#8fd4c8;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:300;font-size:clamp(2.8rem,5.6vw,5rem);line-height:1.06}
+h1 em{color:#8fd4c8}
+p{margin-top:2em;max-width:400px;font-weight:300;font-size:14.5px;line-height:2;color:#b8d4cd}
+.shop{margin-top:2.6em;display:inline-flex;gap:26px;font-size:13px;color:#8fd4c8}
+.shop span{cursor:pointer;padding-bottom:6px;border-bottom:2px solid transparent;transition:.25s}
+.shop span:hover{border-color:#8fd4c8}
 </style></head><body>
-<nav><div class="logo">Tidepool</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">blog · no. 27</div><h1>Tidepool</h1><p class="lead">Words worth your time. Essays and notes published when there is something real to say — never on a content calendar.</p><a class="cta" href="#contact">Read the latest</a></div>
-  <div class="stage"><div class="sc-tide"><div class="pool"><div class="wav w1"></div><div class="wav w2"></div><div class="shell"></div></div><style>.sc-tide{width:min(66vw,340px)}.pool{position:relative;height:250px;border-radius:16px;background:#0f2b33;overflow:hidden;border:2px solid var(--accent)44}.wav{position:absolute;width:220%;height:120px;border-radius:43%;background:#ffffff14;top:34%;left:-60%;animation:tidesw 8s linear infinite}.w2{top:48%;background:#ffffff0d;animation-duration:12s}.shell{position:absolute;bottom:22px;left:50%;width:46px;height:46px;margin-left:-23px;background:var(--paper);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}@keyframes tidesw{to{transform:translateX(28%) rotate(360deg)}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Tidepool · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="pool"></div><div class="foam"></div><div class="shell"></div><div class="star"></div>
+<div class="copy">
+<div class="kick">Objects for a quieter home</div>
+<h1>Things that belong<br>at <em>low tide.</em></h1>
+<p>Ceramics, linens, and small wooden objects in sea-worn colors — chosen for how a room feels after everyone's gone to bed.</p>
+<div class="shop"><span>ceramics →</span><span>linens →</span><span>wood →</span></div></div></body></html>

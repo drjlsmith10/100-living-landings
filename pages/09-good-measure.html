@@ -1,24 +1,34 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Good Measure — Software with a point of view</title><meta name="description" content="A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards."><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#2a1d12;--accent:#e8c27d;--paper:#fffaf0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Cormorant Garamond',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#2a1d12;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #e8c27d66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#2a1d12;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#2a1d12}.below h3{margin:.4rem 0}.card{border-left:3px solid #e8c27d;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Good Measure</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f4f2ec;color:#1c1b18;font-family:Inter,sans-serif;min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr}
+@media(max-width:800px){body{grid-template-columns:1fr}}
+.left{padding:9vh 7vw;display:flex;flex-direction:column;justify-content:center;border-right:1px solid #dcd8cc}
+.right{background:#1c1b18;color:#f4f2ec;padding:9vh 6vw;display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#c25e3a;margin-bottom:3em}
+h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(2.8rem,5vw,4.6rem);line-height:1.02;letter-spacing:-.01em}
+h1 i{color:#c25e3a}
+.left p{max-width:400px;font-size:14px;font-weight:300;line-height:1.95;color:#57534a;margin-top:2em}
+.trust{margin-top:auto;padding-top:6vh;font-size:11px;letter-spacing:.18em;color:#8a857a}
+.demo{background:#26251f;border-radius:14px;padding:30px;margin-top:.5em}
+.demo h3{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8f8a7d;font-weight:600;margin-bottom:24px}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid #3a382f;font-size:14px}
+.row:last-of-type{border:none}
+.row .neg{color:#d97e5f}.row .pos{color:#9dc88d}
+.big{display:flex;justify-content:space-between;align-items:center;margin-top:22px}
+.big b{font-size:44px;font-weight:300}
+.big span{font-size:11px;letter-spacing:.2em;color:#8f8a7d}
+.cta{display:block;text-align:center;background:#c25e3a;color:#fff;text-decoration:none;padding:17px;border-radius:10px;font-weight:600;font-size:13px;letter-spacing:.08em;margin-top:26px;transition:.25s}
+.cta:hover{background:#a84c2c;transform:translateY(-2px)}
 </style></head><body>
-<nav><div class="logo">Good Measure</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">saas · no. 9</div><h1>Good Measure</h1><p class="lead">Software with a point of view. A small, thoughtful tool built by people who use it every day — no dashboards for the sake of dashboards.</p><a class="cta" href="#contact">Start free</a></div>
-  <div class="stage"><div class="sc-measure"><div class="bars"><i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:44%"></i><i style="--h:86%" class="hot"></i></div><div class="targetline"></div><style>.sc-measure{position:relative;width:min(70vw,360px);height:230px}.bars{position:absolute;inset:auto 0 0 0;height:200px;display:flex;align-items:flex-end;justify-content:space-around;border-bottom:2px solid #ffffff44}.bars i{width:17%;height:0;background:#ffffff2e;border-radius:8px 8px 0 0;animation:grow 2.2s cubic-bezier(.2,.9,.3,1.2) forwards;animation-delay:calc(var(--i,0)*.18s)}.bars i:nth-child(1){--i:0}.bars i:nth-child(2){--i:1}.bars i:nth-child(3){--i:2}.bars i:nth-child(4){--i:3}.bars i.hot{background:var(--accent);box-shadow:0 0 30px var(--accent)}.targetline{position:absolute;left:0;right:0;top:24%;border-top:2px dashed var(--accent);animation:tlin 2.2s ease forwards;opacity:0}.targetline:after{content:"goal";position:absolute;right:0;top:-22px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}@keyframes grow{to{height:var(--h)}}@keyframes tlin{to{opacity:1}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Good Measure · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="left"><div class="kick">Honest money · No gamification</div>
+<h1>Your finances,<br>measured — <i>not judged.</i></h1>
+<p>Good Measure shows where your money actually went this month in plain sentences, not pie charts and shame spirals. Connects read-only. Judges never.</p>
+<div class="trust">READ-ONLY · BANK-GRADE ENCRYPTION · CANCEL IN ONE CLICK</div></div>
+<div class="right">
+<div class="demo"><h3>This month, plainly</h3>
+<div class="row"><span>Rent & utilities</span><span>$1,840</span></div>
+<div class="row"><span>Groceries</span><span>$486 <s class="neg" style="font-size:11px">+$62 vs avg</s></span></div>
+<div class="row"><span>Coffee shops</span><span>$94 <s class="neg" style="font-size:11px">you know why</s></span></div>
+<div class="row"><span>Saved automatically</span><span class="pos">$720 ✓</span></div>
+<div class="big"><b>$312</b><span>LEFT UNTIL PAYDAY<br>ON CURRENT PACE</span></div></div>
+<a class="cta" href="#">GET YOUR FIRST MEASURE — FREE</a></div></body></html>

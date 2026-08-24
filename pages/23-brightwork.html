@@ -1,24 +1,25 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Brightwork — Words worth your time</title><meta name="description" content="Essays and notes published when there is something real to say — never on a content calendar."><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--bg:#f4eee4;--accent:#a64b2a;--paper:#1f2937}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-family:'Fraunces',sans-serif;overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 6vw;font-size:14px}.logo{font-weight:800;font-size:20px;letter-spacing:-.03em}nav a{color:inherit;text-decoration:none;margin-left:22px;opacity:.72}nav a:hover{opacity:1}
-.hero{min-height:calc(100vh - 84px);display:flex;align-items:center;justify-content:center;gap:min(7vw,90px);padding:60px 6vw;flex-wrap:wrap}
-.copy{max-width:520px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--accent);font-weight:700}h1{font-size:clamp(2.7rem,6vw,4.6rem);line-height:.98;letter-spacing:-.05em;margin:18px 0 20px}.lead{font-size:1.08rem;opacity:.78;line-height:1.6;margin-bottom:30px}
-.cta{display:inline-block;background:var(--accent);color:#f4eee4;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:700;transition:transform .25s,box-shadow .25s}.cta:hover{transform:translateY(-3px);box-shadow:0 12px 32px #a64b2a66}
-.stage{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-.strip{background:var(--paper);color:#f4eee4;padding:16px 6vw;display:flex;gap:6vw;justify-content:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;flex-wrap:wrap}
-.below{padding:80px 8vw;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--paper);color:#f4eee4}.below h3{margin:.4rem 0}.card{border-left:3px solid #a64b2a;padding-left:18px}@media(max-width:900px){.below{grid-template-columns:1fr}.hero{min-height:auto;padding-top:20px}}
-footer{padding:34px 6vw;font-size:13px;opacity:.6;text-align:center}
+<!doctype html><html><head><meta charset="utf-8"><title>Brightwork</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;800&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f2c400;color:#141210;font-family:Archivo,sans-serif;min-height:100vh;overflow:hidden;display:flex;flex-direction:column}
+.marquee{border-bottom:3px solid #141210;padding:12px 0;white-space:nowrap;overflow:hidden;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.14em}
+.marquee div{display:inline-block;animation:scrollm 18s linear infinite}
+@keyframes scrollm{to{transform:translateX(-50%)}}
+.hero{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 7vw;position:relative}
+h1{font-weight:800;font-size:clamp(3.4rem,9vw,8.6rem);line-height:.94;text-transform:uppercase;letter-spacing:-.03em}
+h1 .out{-webkit-text-stroke:2.5px #141210;color:transparent}
+p{max-width:430px;margin-top:3.4vh;font-size:15px;line-height:1.9;font-weight:500}
+.badges{display:flex;gap:14px;margin-top:4vh;flex-wrap:wrap}
+.bdg{border:2.5px solid #141210;padding:11px 24px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.12em;background:#f2c400}
+.bdg.fill{background:#141210;color:#f2c400}
+.cta{position:absolute;right:7vw;bottom:8vh;width:150px;height:150px;border-radius:50%;background:#141210;color:#f2c400;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;font-weight:800;letter-spacing:.1em;text-decoration:none;line-height:1.5;transition:.35s cubic-bezier(.2,.9,.3,1.3)}
+.cta:hover{transform:scale(1.14) rotate(-8deg)}
+.bolt{position:absolute;top:10vh;right:10vw;width:90px;height:90px;background:#141210;clip-path:polygon(62% 0,20% 55%,48% 55%,38% 100%,82% 42%,52% 42%);animation:pulseB 2.2s ease-in-out infinite}
+@keyframes pulseB{50%{transform:scale(1.14) rotate(6deg)}}
 </style></head><body>
-<nav><div class="logo">Brightwork</div><div><a href="#story">Story</a><a href="#contact">Contact</a></div></nav>
-<main class="hero">
-  <div class="copy"><div class="eyebrow">blog · no. 23</div><h1>Brightwork</h1><p class="lead">Words worth your time. Essays and notes published when there is something real to say — never on a content calendar.</p><a class="cta" href="#contact">Read the latest</a></div>
-  <div class="stage"><div class="sc-brightwork"><div class="prism23"><svg viewBox="0 0 300 170"><polygon points="150,18 232,150 68,150" fill="#ffffff12" stroke="var(--accent)" stroke-width="3"/><rect class="inbeam" x="0" y="60" width="66" height="7" fill="var(--accent)" opacity=".8"/><path class="outr r1" d="M232,118 L300,84" stroke="#ff6b6b" stroke-width="4" fill="none"/><path class="outr r2" d="M232,122 L302,116" stroke="#7ce38b" stroke-width="4" fill="none"/><path class="outr r3" d="M232,126 L298,148" stroke="#6bb8ff" stroke-width="4" fill="none"/></svg></div><style>.prism23 svg{width:min(80vw,460px)}.inbeam{animation:beamB 2.6s linear infinite}.outr{stroke-dasharray:90;stroke-dashoffset:90;animation:splitO 2.6s ease-out infinite}.r2{animation-delay:.12s}.r3{animation-delay:.24s}@keyframes beamB{0%{transform:translateX(-70px)}100%{transform:translateX(0)}}@keyframes splitO{45%,100%{stroke-dashoffset:0}}</style></div></div>
-</main>
-<div class="strip"><span>Independent</span><span>Small batch</span><span>Built to last</span></div>
-<section class="below" id="story">
-<div class="card"><h3>Why we exist</h3><p>Because most options in this space are loud, complicated, or indifferent. This is the quiet alternative.</p></div>
-<div class="card"><h3>How it works</h3><p>Simple onboarding, clear pricing, and a direct line to a human who can actually change something.</p></div>
-<div class="card" id="contact"><h3>Say hello</h3><p><a style="color:inherit" href="mailto:hello@example.com">hello@example.com</a> — real replies, usually within a day.</p></div>
-</section>
-<footer>© 2026 Brightwork · A concept page from the 100 Living Landings gallery</footer>
-</body></html>
+<div class="marquee"><div>MAKE IT CLEAR ★ MAKE IT OBVIOUS ★ MAKE IT IMPOSSIBLE TO MISREAD ★ MAKE IT CLEAR ★ MAKE IT OBVIOUS ★ MAKE IT IMPOSSIBLE TO MISREAD ★&nbsp;</div></div>
+<div class="hero"><div class="bolt"></div>
+<h1>We make<br><span class="out">complicated</span><br>things plain.</h1>
+<p>Brightwork is a communication studio for teams whose work is genuinely hard to explain — deep tech, regulation, infrastructure. If your customers need a glossary, we should talk.</p>
+<div class="badges"><span class="bdg fill">STRATEGY</span><span class="bdg">MESSAGING</span><span class="bdg">DOCS PEOPLE READ</span></div>
+<a class="cta" href="#">BOOK A<br>TEARDOWN<br>↓</a></div>
+<div class="marquee"><div>CLEAR BEATS CLEVER ★ CLARITY IS A FEATURE ★ SAY THE HARD THING SIMPLY ★ CLEAR BEATS CLEVER ★ CLARITY IS A FEATURE ★ SAY THE HARD THING SIMPLY ★&nbsp;</div></div></body></html>
