@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#0f0f13;color:#eeeef2;font-family:Inter,sans-serif;height:100vh;overflow:hidden;display:flex}
+.arrows-viz{flex:1.1;position:relative;background:#0a0a0e;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.v-arrow{position:absolute;font-family:Syne;font-weight:800;color:#22222c;animation:flyV 4s linear infinite;font-size:60px}
+.va1{top:18%;left:-10%;animation-duration:3.6s}.va2{top:48%;left:-16%;animation-duration:5s;animation-delay:1.2s}.va3{top:74%;left:-8%;animation-duration:4.4s;animation-delay:2.1s}
+.v-arrow.hot{color:#7c5cff;filter:drop-shadow(0 0 14px #7c5cff66)}
+@keyframes flyV{to{transform:translateX(120vw) rotate(8deg)}}
+@media(max-width:780px){.arrows-viz{display:none}}
+.copy{width:min(54%,620px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#0f0f13;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#9d7bff;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:Syne;font-weight:800;font-size:clamp(2.9rem,5.4vw,5.2rem);line-height:1;text-transform:uppercase;letter-spacing:-.02em}
+h1 span{color:#9d7bff}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#98939f;max-width:420px}
+.go-row{margin-top:2.8em;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.go{background:#9d7bff;color:#0f0f13;padding:17px 46px;text-decoration:none;font-size:13px;font-weight:800;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #9d7bff44}
+.note-v{font-size:12px;color:#75707c}
+</style></head><body>
+<div class="arrows-viz"><div class="v-arrow va1">→</div><div class="v-arrow hot va2">→</div><div class="v-arrow va3">→</div></div>
+<div class="copy">
+<div class="kick">Vector · momentum as a service</div>
+<h1>All signal.<br>No <span>drift.</span></h1>
+<p>Vector watches your projects the way air-traffic control watches runways — flagging what's stalled, celebrating what's moving, and never letting a priority quietly disappear.</p>
+<div class="go-row"><a class="go" href="#">Get on the vector →</a><span class="note-v">free for your first 3 projects</span></div></div></body></html>

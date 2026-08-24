@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>The Index Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#2b2620;color:#e8e0d0;font-family:Inter,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:5vh 5vw}
+.card-c{width:min(88vw,420px);aspect-ratio:5/3.4;background:#fdf8ec;color:#2a251d;border-radius:6px;position:relative;box-shadow:0 30px 70px #00000066;transform:rotate(-2deg);padding:52px 36px 30px;transition:.4s cubic-bezier(.2,.9,.3,1.2);animation:settleC2 .9s cubic-bezier(.2,.9,.3,1.15) both}
+.card-c:hover{transform:rotate(0) scale(1.03)}
+.rule-r{position:absolute;top:38px;left:20px;right:20px;height:2px;background:#d96c5c}
+.pin-p{position:absolute;top:12px;left:calc(50% - 8px);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#ff8a8a,#b02a2a)}
+.hand-h{font-family:Caveat,cursive;font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.35;color:#33302a}
+.hand-h b{color:#b5541e}
+.sub-s{font-size:13px;font-weight:300;margin-top:18px;color:#75695a;line-height:1.8}
+.behind{position:absolute;width:min(80vw,380px);aspect-ratio:5/3.4;background:#f0e8d2;border-radius:6px;top:50%;left:50%;transform:translate(-46%,-48%) rotate(3deg);z-index:-1;opacity:.5}
+.cta-c{display:inline-block;margin-top:22px;background:#b5541e;color:#fff;padding:13px 32px;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.06em;transition:.25s}
+.cta-c:hover{background:#2a251d}
+</style></head><body>
+<div class="behind"></div>
+<div class="card-c"><div class="pin-p"></div><div class="rule-r"></div>
+<p class="hand-h">One useful idea,<br><b>every Friday.</b><br>Fits on this card.</p>
+<p class="sub-s">The Index Card is a free weekly note — one idea from a good book, compressed to card size, with the page number so you can read more.</p>
+<a class="cta-c" href="#">Get next Friday's card →</a></div></body></html>
