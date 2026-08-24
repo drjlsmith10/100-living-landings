@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>The Relay</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#101418;color:#e4ecf2;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.runners{flex:1.1;position:relative;background:linear-gradient(#141c24,#1a2632);overflow:hidden}
+.track-r{position:absolute;bottom:0;width:100%;height:30vh;background:repeating-linear-gradient(90deg,#18222c 0 50px,#131b24 50px 100px)}
+.runner-a{position:absolute;font-size:40px;bottom:20vh;animation:runR 5s linear infinite}
+.r1{left:-60px}.r2{left:-160px;animation-delay:2.5s}
+@keyframes runR{to{left:110%}}
+.baton-glow{position:absolute;top:12%;right:14%;font-size:min(6vw,44px);filter:drop-shadow(0 0 18px #ffd16688);animation:pulseBt 2s ease-in-out infinite alternate}
+@keyframes pulseBt{to{transform:scale(1.18)}}
+@media(max-width:780px){.runners{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#101418;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#ffd166;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.8rem,5vw,4.9rem);line-height:1.05;color:#f0f5fa}
+h1 b{color:#ffd166;font-weight:700}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#93a3ad;max-width:420px}
+.go-row{margin-top:2.8em;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.go{background:#ffd166;color:#101418;padding:16px 42px;text-decoration:none;font-size:13px;font-weight:700;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #ffd16644}
+.note-r{font-size:12px;color:#75828e}
+</style></head><body>
+<div class="runners"><div class="track-r"></div><div class="runner-a r1">🏃</div><div class="runner-a r2">🏃</div><div class="baton-glow">🔥</div></div>
+<div class="copy">
+<div class="kick">The Relay · a newsletter for people who ship</div>
+<h1>Hand off the<br><b>hard parts.</b></h1>
+<p>Every Tuesday: one builder's shipping log — what launched, what stalled, and the exact handoff trick that saved the week. Read by 4,200 people who make things.</p>
+<div class="go-row"><a class="go" href="#">Join the relay →</a><span class="note-r">one email a week · replies welcome</span></div></div></body></html>

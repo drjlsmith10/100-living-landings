@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Orchard</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#f7f1e2;color:#3d3226;font-family:Nunito,sans-serif;height:100vh;overflow:hidden;display:flex}
+.trees{flex:1.1;position:relative;background:linear-gradient(#f0e4c8,#e0cfa8);overflow:hidden}
+.tree-o{position:absolute;bottom:-2%;transform-origin:bottom center;animation:swayO 8s ease-in-out infinite alternate}
+.tr{width:min(20vw,150px)}
+.tr::before{content:"";position:absolute;bottom:0;left:50%;width:16px;height:38%;background:#7a5230;border-radius:6px;margin-left:-8px}
+.tr::after{content:"";position:absolute;bottom:26%;left:50%;width:130px;height:110px;margin-left:-65px;border-radius:50% 50% 44% 44%;background:radial-gradient(circle at 40% 35%,#7a9a52,#5a7a3e 70%)}
+.apple{position:absolute;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#ff9d6b,#c94a2a);animation:dropA 6s cubic-bezier(.55,0,.85,.5) infinite}
+.a1{top:30%;left:30%}.a2{top:34%;left:56%;animation-delay:2s}.a3{top:28%;left:74%;animation-delay:4s}
+@keyframes swayO{from{transform:rotate(-1.6deg)}to{transform:rotate(1.6deg)}}
+@keyframes dropA{0%,58%{opacity:1}70%{transform:translateY(90px)}78%{transform:translateY(76px)}86%,100%{transform:translateY(88px);opacity:0}}
+@media(max-width:780px){.trees{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#f7f1e2;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#8a6a2e;text-transform:uppercase;margin-bottom:2.2em}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(2.8rem,4.9vw,4.7rem);line-height:1.06;color:#2e2517}
+h1 em{color:#b5852f;font-weight:400}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#75684f;max-width:400px}
+.box-row{display:flex;gap:18px;margin-top:2.6em;flex-wrap:wrap}
+.box-c{border:1.5px solid #d9cba4;padding:14px 24px;border-radius:12px;font-size:13px;color:#57503f}
+.go{margin-top:2.8em;width:fit-content;background:#57744d;color:#f7f1e2;font-weight:700;padding:16px 44px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s;display:inline-block;margin-right:14px}
+.go:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 14px 40px #57744d33}
+</style></head><body>
+<div class="trees"><div class="tree-o tr" style="left:8%"><div class="apple a1"></div></div><div class="tree-o tr" style="left:36%;animation-delay:.9s"><div class="apple a2"></div></div><div class="tree-o tr" style="left:64%;animation-delay:1.7s"><div class="apple a3"></div></div></div>
+<div class="copy">
+<div class="kick">Orchard · fruit, flower & pantry goods</div>
+<h1>Picked at dawn,<br><em>at your door</em><br>by noon.</h1>
+<p>A working orchard with a farm stand online — whatever ripened overnight is what ships today. Never cold storage, never out of season.</p>
+<div class="box-row"><span class="box-c">🍎 fruit box — $28/wk</span><span class="box-c">🌻 stems — $16/bunch</span><span class="box-c">🍯 pantry — from $9</span></div>
+<a class="go" href="#">See what ripened today →</a></div></body></html>

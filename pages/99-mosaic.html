@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Mosaic</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#101014;color:#eae8e0;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.tiles-viz{flex:1.1;position:relative;display:flex;align-items:center;justify-content:center;background:#0c0c0f}
+.grid-m{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:min(44vw,300px)}
+.cell{aspect-ratio:1;border-radius:12px;background:#1a1a20;animation:tileinM .7s cubic-bezier(.2,.9,.3,1.25) both;transition:.3s;cursor:pointer}
+.cell:hover{transform:scale(1.08) rotate(-2deg);z-index:1}
+.c1{background:#5cb8d4;animation-delay:.05s}.c2{background:#e0a04a;animation-delay:.1s}.c3{background:#1a1a20;animation-delay:.15s}.c4{background:#7ed9a3;animation-delay:.2s}.c5{background:#e07b8a;animation-delay:.25s}.c6{background:#1a1a20;animation-delay:.3s}.c7{background:#b48cff;animation-delay:.35s}.c8{background:#ffd166;animation-delay:.4s}.c9{background:#1a1a20;animation-delay:.45s}.c10{background:#5cb8d4;animation-delay:.5s}.c11{background:#1a1a20;animation-delay:.55s}.c12{background:#e07b8a;animation-delay:.6s}
+@keyframes tileinM{from{transform:scale(.2) rotate(-12deg);opacity:0}}
+@media(max-width:800px){.tiles-viz{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#101014;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#b48cff;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.05;color:#f2f0ea}
+h1 b{color:#b48cff;font-weight:700}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#98938a;max-width:420px}
+.go{margin-top:2.8em;width:fit-content;background:#b48cff;color:#101014;font-weight:700;padding:16px 44px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s;display:inline-block;margin-right:14px}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #b48cff44}
+</style></head><body>
+<div class="tiles-viz"><div class="grid-m"><div class="cell c1"></div><div class="cell c2"></div><div class="cell c3"></div><div class="cell c4"></div><div class="cell c5"></div><div class="cell c6"></div><div class="cell c7"></div><div class="cell c8"></div><div class="cell c9"></div><div class="cell c10"></div><div class="cell c11"></div><div class="cell c12"></div></div></div>
+<div class="copy">
+<div class="kick">Mosaic · see the whole picture at once</div>
+<h1>Your metrics,<br>assembled into <b>one wall.</b></h1>
+<p>Stop alt-tabbing between six dashboards. Mosaic arranges every tool's numbers into a single configurable mosaic — one screen, whole truth.</p>
+<a class="go" href="#">Assemble yours — free</a><a class="go" style="background:none;color:#98938a" href="#">see a live wall →</a></div></body></html>

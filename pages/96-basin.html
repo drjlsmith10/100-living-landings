@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Basin</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0e1a1c;color:#dceef0;font-family:sans-serif;height:100vh;overflow:hidden;display:flex}
+.water-viz{flex:1.1;position:relative;background:linear-gradient(#12262a,#1a3a40);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.basin-b{position:relative;width:min(50vw,300px);height:min(34vh,220px);background:#f4f0e4;border-radius:14px 14px 70px 70px/14px 14px 90px 90px;overflow:hidden;box-shadow:0 40px 80px #00000066}
+.water-w{position:absolute;bottom:0;width:100%;background:linear-gradient(#5cb8d4,#2a7ba8);animation:fillWb 6s ease-in-out infinite alternate}
+@keyframes fillWb{from{height:30%}to{height:58%}}
+.drop-in{position:absolute;top:-8%;left:50%;width:16px;height:16px;margin-left:-8px;background:#7fd4e8;border-radius:0 50% 50% 50%;transform:rotate(45deg);animation:dripB 6s ease-in infinite}
+@keyframes dripB{0%,10%{top:-8%;opacity:1}22%{top:20%;opacity:1}28%,100%{opacity:0}}
+@media(max-width:780px){.water-viz{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#0e1a1c;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#7fd4e8;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:250;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.06;color:#f0f8fa}
+h1 b{color:#7fd4e8;font-weight:700}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#93b5bd;max-width:420px}
+.go{margin-top:2.8em;width:fit-content;background:#7fd4e8;color:#0e1a1c;font-weight:700;padding:17px 46px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #7fd4e844}
+</style></head><body>
+<div class="water-viz"><div class="basin-b"><div class="water-w"></div></div><div class="drop-in"></div></div>
+<div class="copy">
+<div class="kick">Basin · water, light & quiet spaces</div>
+<h1>The room where<br>the day <b>dissolves.</b></h1>
+<p>Hand-thrown stone basins and warm-dim lighting that turn a bathroom into the ten quietest minutes of your house. Made to order, in two colors, forever.</p>
+<a class="go" href="#">Design your basin →</a></div></body></html>

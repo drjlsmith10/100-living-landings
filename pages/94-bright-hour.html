@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>The Bright Hour</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400&family=Karla:wght@300&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#fdf6e8;color:#4a3c28;font-family:Karla,sans-serif;height:100vh;overflow:hidden;display:flex}
+.rays-viz{flex:1.1;position:relative;background:linear-gradient(#fff9ec,#ffedc8);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rays-r{position:absolute;top:50%;left:50%;width:min(70vw,420px);height:min(70vw,420px);margin-top:calc(min(35vw,210px)*-1);margin-left:calc(min(35vw,210px)*-1);animation:spinR 30s linear infinite}
+.rays-r i{position:absolute;top:50%;left:50%;width:5px;height:min(35vw,210px);background:linear-gradient(#ffd98a,#ffd98a00);border-radius:4px;margin-top:calc(min(35vw,210px)*-1);transform-origin:center bottom}
+.rays-r i:nth-child(2){transform:rotate(45deg)}.rays-r i:nth-child(3){transform:rotate(90deg)}.rays-r i:nth-child(4){transform:rotate(135deg)}.rays-r i:nth-child(5){transform:rotate(180deg)}.rays-r i:nth-child(6){transform:rotate(225deg)}.rays-r i:nth-child(7){transform:rotate(270deg)}.rays-r i:nth-child(8){transform:rotate(315deg)}
+@keyframes spinR{to{transform:rotate(360deg)}}
+.sun-c{position:absolute;top:50%;left:50%;width:110px;height:110px;margin:-55px;border-radius:50%;background:radial-gradient(#fff6d8,#ffcf7a);box-shadow:0 0 70px #ffd98a;animation:pulseSb 4s ease-in-out infinite alternate}
+@keyframes pulseSb{to{transform:scale(1.08)}}
+@media(max-width:800px){.rays-viz{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#fdf6e8;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#d99a2e;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:Fraunces,serif;font-style:italic;font-weight:400;font-size:clamp(2.9rem,5.2vw,5rem);line-height:1.06;color:#33291a}
+h1 b{color:#d99a2e;font-weight:400}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#8a7550;max-width:400px}
+.go{margin-top:2.8em;width:fit-content;background:#d99a2e;color:#fff9ec;padding:17px 46px;text-decoration:none;font-size:13px;border-radius:999px;font-weight:600;transition:.25s}
+.go:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 14px 44px #d99a2e44}
+</style></head><body>
+<div class="rays-viz"><div class="rays-r"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="sun-c"></div></div>
+<div class="copy">
+<div class="kick">The Bright Hour · a daily note for a better day</div>
+<h1>One good minute,<br>before <b>the coffee.</b></h1>
+<p>Each morning at 6:58 — two minutes before your alarm's snooze window closes — one short reflection lands: a question worth carrying into the day.</p>
+<a class="go" href="#">Start tomorrow morning →</a></div></body></html>

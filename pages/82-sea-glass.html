@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Sea Glass</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#dcebe8;color:#1f4a44;font-family:Quicksand,sans-serif;height:100vh;overflow:hidden;display:flex}
+.shore{flex:1.1;position:relative;background:linear-gradient(#c3e0da 55%,#e8dcc0 55%);overflow:hidden}
+.foam-s{position:absolute;top:52%;left:-10%;width:120%;height:10%;background:#ffffff88;border-radius:45%;animation:tideS 7s ease-in-out infinite alternate}
+.glass-p{position:absolute;border-radius:46% 54% 58% 42%/55% 48% 52% 45%;box-shadow:inset -6px -6px 12px #00000018,0 10px 24px #1f4a4a26;animation:settleG 1s cubic-bezier(.2,.9,.3,1.2) both}
+.p1{width:64px;height:50px;bottom:16%;left:22%;background:radial-gradient(circle at 32% 28%,#bfeee0,#5fbfa4);animation-delay:.1s}
+.p2{width:48px;height:40px;bottom:20%;left:42%;background:radial-gradient(circle at 32% 28%,#cfe3f7,#6f9fd8);animation-delay:.35s;transform:rotate(14deg)}
+.p3{width:56px;height:44px;bottom:15%;left:60%;background:radial-gradient(circle at 32% 28%,#f4e3c8,#d8b98a);animation-delay:.6s;transform:rotate(-9deg)}
+@keyframes tideS{to{transform:translateY(14px)}}
+@keyframes settleG{from{transform:translateY(-70px) rotate(30deg);opacity:0}}
+@media(max-width:780px){.shore{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#dcebe8;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#3a8a7a;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:700;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.05;color:#123c36}
+h1 em{color:#3a8a7a;font-style:normal}
+p{margin-top:2em;font-weight:500;font-size:14.5px;line-height:2;color:#3f6b62;max-width:400px}
+.go{margin-top:2.8em;width:fit-content;background:#123c36;color:#dcebe8;font-weight:700;padding:17px 46px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s;display:inline-block;margin-right:14px}
+.go:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 14px 40px #123c3644}
+.note{font-size:11.5px;color:#5a8a80;margin-top:1.4em}
+</style></head><body>
+<div class="shore"><div class="foam-s"></div><div class="glass-p p1"></div><div class="glass-p p2"></div><div class="glass-p p3"></div></div>
+<div class="copy">
+<div class="kick">Sea Glass · objects found, not forced</div>
+<h1>Tumbled by the tide,<br><em>finished by hand.</em></h1>
+<p>Genuine beach-found sea glass set in recycled silver — every piece one of a kind, mapped to the shore it washed up on.</p>
+<a class="go" href="#">Browse this month's finds</a><span class="note">✓ 214 pieces collected · Cornwall & Maine</span></div></body></html>

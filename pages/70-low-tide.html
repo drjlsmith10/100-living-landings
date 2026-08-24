@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Low Tide</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#0f2830;color:#d8ecee;font-family:Inter,sans-serif;height:100vh;overflow:hidden;display:flex}
+.tide-viz{flex:1.1;position:relative;background:linear-gradient(#143842,#0c2028);overflow:hidden}
+.waves-l{position:absolute;bottom:24%;width:200%;height:60%;left:-50%;border-radius:45%;background:#1a4a52;animation:rollL 10s linear infinite}
+.w2l{bottom:18%;background:#123a44;animation-duration:15s}.w3l{bottom:12%;background:#0e3038;animation-duration:20s}
+@keyframes rollL{to{transform:rotate(360deg)}}
+.starfish-l{position:absolute;bottom:30%;right:20%;width:52px;height:52px;background:#e07b5c;clip-path:polygon(50% 0,63% 35%,100% 38%,72% 61%,81% 100%,50% 76%,19% 100%,29% 61%,0 38%,37% 35%);animation:crawlSf 14s ease-in-out infinite alternate}
+@keyframes crawlSf{to{transform:translateX(-70px) rotate(22deg)}}
+@media(max-width:780px){.tide-viz{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#0f2830;z-index:1}
+.kick{font-family:Caveat,cursive;font-size:23px;color:#7fd4cf;margin-bottom:.6em}
+h1{font-weight:300;font-size:clamp(2.8rem,5vw,4.9rem);line-height:1.06;color:#eafaf6}
+h1 em{color:#7fd4cf}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#93bcc0;max-width:420px}
+.go-row{margin-top:2.8em;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.go{background:#7fd4cf;color:#0f2830;padding:16px 44px;text-decoration:none;font-size:13px;font-weight:700;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 14px 44px #7fd4cf44}
+.note-t{font-size:12px;color:#6b98a0}
+</style></head><body>
+<div class="tide-viz"><div class="waves-l"></div><div class="waves-l w2l"></div><div class="waves-l w3l"></div><div class="starfish-l"></div></div>
+<div class="copy">
+<div class="kick">dispatches from the edge of ordinary</div>
+<h1>Notes from<br><em>low tide,</em></h1>
+<p>The quiet hours between things — essays on slowness, salt air, and what washes up when the water pulls back. One letter a month, written beside the sea.</p>
+<div class="go-row"><a class="go" href="#">Read the latest →</a><span class="note-t">free · unsubscribe is one click, like the tide</span></div></div></body></html>

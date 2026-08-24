@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Foundry</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;800&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#171310;color:#f0e8d8;font-family:Archivo,sans-serif;height:100vh;overflow:hidden;display:flex}
+.furnace{flex:1.1;position:relative;background:radial-gradient(circle at 50% 65%,#3d1e08,#1c0e05);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.crucible{width:min(36vw,220px);height:min(30vh,180px);background:linear-gradient(#2a2a32,#141419);border-radius:10px 10px 60% 60%;position:relative;box-shadow:0 40px 80px #000000aa}
+.pour{position:absolute;top:-55%;left:50%;width:22px;height:70%;margin-left:-11px;background:linear-gradient(#ffd166,#ff7a2e);border-radius:0 0 12px 12px;filter:blur(1px);animation:pourF 5s cubic-bezier(.6,.05,.4,.95) infinite;opacity:0}
+.metal{position:absolute;bottom:0;left:0;right:0;height:0;background:linear-gradient(#ff9d3c,#c9531e);transform-origin:bottom;animation:setM 5s cubic-bezier(.6,.05,.4,.95) infinite}
+@keyframes pourF{0%,14%{top:-60%;opacity:0}16%{opacity:1;top:-60%}48%{top:-8%;opacity:1}58%,100%{top:-8%;opacity:0}}
+@keyframes setM{0%,44%{height:0}72%,88%{height:38%}100%{height:38%;opacity:0}}
+@media(max-width:800px){.furnace{display:none}}
+.copy{width:min(52%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#171310;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#ff9d3c;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-weight:800;font-size:clamp(2.9rem,5.4vw,5.2rem);line-height:.98;text-transform:uppercase;letter-spacing:-.02em;color:#f7f0e0}
+h1 span{color:#ff9d3c}
+p{margin-top:2em;font-weight:300;font-size:15px;line-height:2.05;color:#b3a68c;max-width:420px}
+.steps-f{display:flex;gap:10px;margin-top:2.6em;font-size:12px;color:#93876e;letter-spacing:.14em;text-transform:uppercase;flex-wrap:wrap}
+.steps-f b{color:#ff9d3c;margin-right:8px;font-weight:400}
+.go{margin-top:2.8em;width:fit-content;background:#ff9d3c;color:#171310;font-weight:800;padding:17px 46px;text-decoration:none;font-size:13px;border-radius:999px;transition:.25s}
+.go:hover{transform:translateY(-3px);box-shadow:0 16px 44px #ff9d3c44}
+</style></head><body>
+<div class="furnace"><div class="crucible"><div class="pour"></div><div class="metal"></div></div></div>
+<div class="copy">
+<div class="kick">Foundry · turn raw ideas into tested offers</div>
+<h1>Ideas are ore.<br><span>We pour the ingots.</span></h1>
+<p>A six-week forge for your idea backlog: every concept gets pressure-tested against real buyers before a line of code or a page of copy exists.</p>
+<div class="steps-f"><span><b>01</b>Pour</span><span><b>02</b>Cool</span><span><b>03</b>Stress-test</span><span><b>04</b>Sell it first</span></div>
+<a class="go" href="#">Enter the foundry →</a></div></body></html>

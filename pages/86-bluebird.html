@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Bluebird</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;1,400&family=Karla:wght@300;600&display=swap" rel="stylesheet">
+<style>*{margin:0;box-sizing:border-box}body{background:#e9f2f7;color:#22384a;font-family:Karla,sans-serif;height:100vh;overflow:hidden;display:flex}
+.sky-b{flex:1.15;position:relative;background:linear-gradient(#cfe6f2,#a8d0e4);overflow:hidden}
+.bird-fly{position:absolute;font-size:min(5vw,34px);top:30%;left:-10%;animation:flyB 11s linear infinite;color:#34557a}
+@keyframes flyB{from{transform:translateX(0) translateY(0)}25%{transform:translateX(28vw) translateY(-20px)}50%{transform:translateX(55vw) translateY(8px)}75%{transform:translateX(80vw) translateY(-14px)}to{transform:translateX(110vw) translateY(0)}}
+.wire{position:absolute;bottom:26%;width:100%;height:2px;background:#34557a44}
+.bird-sit{position:absolute;bottom:calc(26% - 12px);font-size:min(4vw,26px);color:#34557a;left:24%;animation:sitB 7s ease-in-out infinite alternate}
+@keyframes sitB{50%{transform:translateY(-6px) rotate(-4deg)}}
+@media(max-width:780px){.sky-b{display:none}}
+.copy{width:min(54%,600px);padding:11vh max(6vw,50px);display:flex;flex-direction:column;justify-content:center;background:#e9f2f7;z-index:1}
+.kick{font-size:11px;letter-spacing:.42em;color:#4a7ba8;text-transform:uppercase;margin-bottom:2.4em}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(2.8rem,4.9vw,4.7rem);line-height:1.1;color:#1c3040}
+h1 em{color:#4a7ba8}
+p{margin-top:2em;font-weight:300;font-size:14.5px;line-height:2;color:#57718a;max-width:400px}
+.go-row{margin-top:2.8em;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.go{background:#22384a;color:#e9f2f7;padding:16px 42px;text-decoration:none;font-size:13px;font-weight:600;border-radius:999px;transition:.25s}
+.go:hover{background:#4a7ba8;transform:translateY(-3px)}
+.note-b{font-size:12px;color:#7590a3}
+</style></head><body>
+<div class="sky-b"><div class="wire"></div><div class="bird-sit">🐦</div><div class="bird-fly">🕊️</div></div>
+<div class="copy">
+<div class="kick">Bluebird · a studio for humane technology</div>
+<h1>Technology that<br>respects the <em>person</em><br>using it.</h1>
+<p>We design and build software that ends its session when you're done — no infinite scrolls, no dark patterns, no engagement metrics worshipped at the expense of your afternoon.</p>
+<div class="go-row"><a class="go" href="#">See our principles →</a><span class="note-b">currently booking Q4 projects</span></div></div></body></html>
